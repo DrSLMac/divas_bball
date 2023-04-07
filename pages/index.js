@@ -2,7 +2,8 @@ import Head from 'next/head'
 import { Livvic } from 'next/font/google'
 
 const livvic = Livvic({ 
-  subsets: ['latin'] 
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '700', '900'],
 })
 
 export default function Home() {
@@ -16,6 +17,15 @@ export default function Home() {
       </Head>
       <main className={livvic.className}>
       <h1>Home Page</h1>
+
+      {/* Socials */}
+
+      {/* Banner */}
+
+      {/* NavBar */}
+
+      {/* Hero */}
+
       </main>
     </>
   )
