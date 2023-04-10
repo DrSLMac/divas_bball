@@ -1,5 +1,8 @@
 import Head from 'next/head'
 import { Livvic } from 'next/font/google'
+import Socials from '@/components/Socials'
+import Banner from '@/components/Banner'
+import NavBar from '@/components/NavBar'
 
 const livvic = Livvic({ 
   subsets: ['latin'],
@@ -16,16 +19,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={livvic.className}>
-      <h1>Home Page</h1>
+      <Socials />
 
-      {/* Socials */}
+      <Banner />
 
-      {/* Banner */}
-
-      {/* NavBar */}
+      <NavBar />
 
       {/* Hero */}
 
+      <h1>Home Page</h1>
       </main>
     </>
   )
