@@ -12,9 +12,8 @@ import SmNavBar from './SmNavBar'
 const NavBar = () => {
 
   return (
-    <>
     <nav className='bg-navy-blue h-16 flex lg:hidden'>
-
+    
         <MobileNavBar />
         <SmNavBar />
         {/* small screen view of navbar */}
@@ -35,11 +34,7 @@ const NavBar = () => {
                 <p className='px-4 hover:border-b transition duration-150 hover:ease-in-out'>CONTACT</p>
             </Link> */}
         {/* </div> */}
-
     </nav>
-    </>
-
-
   )
 }
 

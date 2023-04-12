@@ -79,7 +79,7 @@ const items = [
 const Banner = () => {
 
   return (
-    <div className='hidden sm:flex justify-around items-center bg-navy-blue
+    <div className='hidden sm:flex sticky top-11 justify-around items-center bg-navy-blue
         h-full py-2 lg:px-[12%]'
     >
         <div className='sm:px-48 lg:px-8'>

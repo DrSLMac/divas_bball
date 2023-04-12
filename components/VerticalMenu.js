@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const VerticalMenu = ({ items }) => {
     const [activeIndex, setActiveIndex] = useState(null)
-    console.log("items: ", items)
+    // console.log("items: ", items)
 
     const handleClick = (index) => {
         if (index === activeIndex) {
