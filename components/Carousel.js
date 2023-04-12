@@ -6,7 +6,7 @@ const Carousel = ({images}) => {
 
   return (
     <section>
-        <motion.div className='relative scroll-smooth overflow-hidden
+        <motion.div className=' scroll-smooth overflow-hidden
         flex justify-evenly items-center mx-auto'>
             <div className='w-full flex space-x-36 snap-x snap-mandatory overflow-x-scroll p-10 '>
                 {images.map((image) => (
