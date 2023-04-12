@@ -12,7 +12,7 @@ import SmNavBar from './SmNavBar'
 const NavBar = () => {
 
   return (
-    <nav className='bg-navy-blue h-16 flex lg:hidden'>
+    <nav className='bg-navy-blue h-16 flex'>
     
         <MobileNavBar />
         <SmNavBar />

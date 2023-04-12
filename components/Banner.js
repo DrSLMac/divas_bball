@@ -80,7 +80,7 @@ const Banner = () => {
 
   return (
     <div className='hidden sm:flex sticky top-11 justify-around items-center bg-navy-blue
-        h-full py-2 lg:px-[12%]'
+        h-full pt-2 lg:px-[12%]'
     >
         <div className='sm:px-48 lg:px-8'>
             <Link href='/'>
@@ -92,9 +92,9 @@ const Banner = () => {
                 />
             </Link>
         </div>
-        <div className='mr-4'>
+        {/* <div className='mr-4'>
             <VerticalMenu items={items} />
-        </div>
+        </div> */}
        
     </div>
   )

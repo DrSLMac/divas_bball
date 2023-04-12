@@ -27,7 +27,7 @@ const SmNavBar = () => {
     const closeFourth = () => setFourthMenu(null);
 
   return (
-        <div className='hidden sm:flex sticky justify-center items-center text-white text-md w-full lg:hidden'>
+        <div className='hidden sm:flex sticky top-30 justify-center items-center text-white text-md w-full '>
             <div>
                 <Button
                     id="basic-button"
