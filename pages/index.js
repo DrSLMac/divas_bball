@@ -6,6 +6,7 @@ import NavBar from '@/components/NavBar'
 import Hero from '@/components/Hero'
 import Footer from '@/components/Footer'
 import AboutBlock from '@/components/AboutBlock'
+import PageBlocks from '@/components/PageBlocks'
 
 
 
@@ -32,7 +33,8 @@ export default function Home() {
         </section>
 
         <section className='snap-center' >
-          <AboutBlock />
+          {/* <AboutBlock /> */}
+          <PageBlocks />
         </section>
 
       </main>
