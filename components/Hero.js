@@ -2,43 +2,44 @@ import Image from "next/image";
 import heroBackground from '../public/dallas-skyline.png'
 import { motion } from "framer-motion"
 import Carousel from "./Carousel";
-import pic2 from '../public/carousel-pics/pic2.jpeg'
-import pic3 from '../public/carousel-pics/pic21.jpeg'
-import pic4 from '../public/carousel-pics/pic4.jpeg'
-import pic5 from '../public/carousel-pics/pic5.jpeg'
-import pic6 from '../public/carousel-pics/pic6.jpeg'
-import pic7 from '../public/carousel-pics/pic7.jpeg'
-import pic8 from '../public/carousel-pics/pic8.jpeg'
-import pic9 from '../public/carousel-pics/pic9.jpeg'
-import pic10 from '../public/carousel-pics/pic10.jpeg'
-import pic11 from '../public/carousel-pics/pic11.jpeg'
-import pic13 from '../public/carousel-pics/pic14.jpeg'
-import pic14 from '../public/carousel-pics/pic15.jpeg'
+
+import pic1 from '../public/carousel-pics/pic7.jpeg'
+import pic2 from '../public/carousel-pics/pic6.jpeg'
+import pic3 from '../public/carousel-pics/pic8.jpeg'
+import pic4 from '../public/carousel-pics/pic5.jpeg'
+import pic5 from '../public/carousel-pics/pic9.jpeg'
+import pic6 from '../public/carousel-pics/pic4.jpeg'
+import pic7 from '../public/carousel-pics/pic17.jpeg'
+import pic8 from '../public/carousel-pics/pic15.jpeg'
+import pic9 from '../public/carousel-pics/pic18.jpeg'
+import pic10 from '../public/carousel-pics/pic19.jpeg'
+import pic11 from '../public/carousel-pics/pic21.jpeg'
+import pic12 from '../public/carousel-pics/pic10.jpeg'
+import pic13 from '../public/carousel-pics/pic11.jpeg'
+import pic14 from '../public/carousel-pics/pic14.jpeg'
 import pic15 from '../public/carousel-pics/pic16.jpeg'
-import pic16 from '../public/carousel-pics/pic17.jpeg'
-import pic17 from '../public/carousel-pics/pic18.jpeg'
-import pic18 from '../public/carousel-pics/pic19.jpeg'
-import pic19 from '../public/carousel-pics/pic22.jpeg'
+import pic16 from '../public/carousel-pics/pic2.jpeg'
+import pic17 from '../public/carousel-pics/pic22.jpeg'
 import AboutBlock from "./AboutBlock";
 
 const images =[
-    {src: pic2, id: 2}, 
-    {src: pic3, id: 3}, 
-    {src: pic4, id: 4}, 
-    {src: pic5, id: 5}, 
-    {src: pic6, id: 6}, 
-    {src: pic7, id: 7}, 
-    {src: pic8, id: 8}, 
-    {src: pic9, id: 9}, 
-    {src: pic10, id: 10},
-    {src: pic11, id: 11},
-    {src: pic13, id: 13},
-    {src: pic14, id: 14},
-    {src: pic15, id: 15},
-    {src: pic16, id: 16},
-    {src: pic17, id: 17},
-    {src: pic18, id: 18},
-    {src: pic19, id: 19},
+    {src: pic1, id: 2}, 
+    {src: pic2, id: 3}, 
+    {src: pic3, id: 4}, 
+    {src: pic4, id: 5}, 
+    {src: pic5, id: 6}, 
+    {src: pic6, id: 7}, 
+    {src: pic7, id: 8}, 
+    {src: pic8, id: 9}, 
+    {src: pic9, id: 10},
+    {src: pic10, id: 11},
+    {src: pic11, id: 13},
+    {src: pic12, id: 14},
+    {src: pic13, id: 15},
+    {src: pic14, id: 16},
+    {src: pic15, id: 17},
+    {src: pic16, id: 18},
+    {src: pic17, id: 19},
 ]
 
 
