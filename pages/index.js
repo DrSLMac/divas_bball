@@ -36,7 +36,7 @@ export default function Home() {
         </section>
 
       </main>
-      <section>
+      <section className='snap-end'>
         <Footer />
       </section>
     </div>
