@@ -26,8 +26,8 @@ const PageBlocks = () => {
                 </h1>
                 <h1>Athletes for Life</h1>
             </div>
-            <div className='mx-4 text-sm'>
-                <p className='indent-8'>Based out of Allen, TX, Divas Basketball is dedicated to the growth and development of the overall athlete. Divas Basketball is here to promote the sport of women's basketball from kindergarten all the way to adulthood. </p>
+            <div className='mx-4 text-sm mt-1'>
+                <p className='indent-8'>Based out of Allen, TX, Divas Basketball is dedicated to the growth and development of the overall athlete. Divas Basketball is here to promote women&apos;s basketball from kindergarten all the way to adulthood. </p>
                 <p className='hidden'>We offer skill sessions to match every level out of Allen, Texas, so whether your child wants to learn basic skills, or wants to compete for college scholarships, we will provide an excellent learning environment, clean gym space, and plenty of great coaching to achieve those goals.</p>
 
             </div>
