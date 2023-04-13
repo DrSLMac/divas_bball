@@ -2,7 +2,6 @@ import React from 'react'
 import Image from 'next/image'
 import divaLogo from '../public/divas.png'
 import Link from 'next/link'
-import VerticalMenu from './VerticalMenu';
 
 const items = [
     {
@@ -32,7 +31,7 @@ const items = [
       submenus: [
         {
             title: 'Overview of Teams',
-            url: '/team-overview'
+            url: '/teams'
         },
         {
             title: 'Doom Squad',
@@ -79,8 +78,8 @@ const items = [
 const Banner = () => {
 
   return (
-    <div className='hidden sm:flex sticky top-11 justify-around items-center bg-navy-blue
-        h-full pt-2 lg:px-[12%]'
+    <div className='hidden sm:flex justify-around items-center bg-navy-blue
+        h-full pt-1 lg:px-[12%]'
     >
         <div className='sm:px-48 lg:px-8'>
             <Link href='/'>
@@ -92,10 +91,6 @@ const Banner = () => {
                 />
             </Link>
         </div>
-        {/* <div className='mr-4'>
-            <VerticalMenu items={items} />
-        </div> */}
-       
     </div>
   )
 }

@@ -5,13 +5,13 @@ import Link from 'next/link'
 
 const Socials = () => {
   return (
-    <header className='bg-deep-red flex items-start justify-between
-            sticky top-0  mx-auto z-20 w-screen
-            h-11  px-3
-            md:px-6
-            lg:px-20    
-            xl:px-40
-            2xl:px-60'
+    <section className='bg-deep-red flex items-start justify-between
+        mx-auto w-screen
+        h-11  px-3
+        md:px-6
+        lg:px-20    
+        xl:px-40
+        2xl:px-60'
     >
         <motion.div
             initial={{
@@ -62,7 +62,7 @@ const Socials = () => {
                     </p>
                 </Link>
             </motion.div>
-    </header>
+    </section>
   )
 }
 

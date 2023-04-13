@@ -5,6 +5,7 @@ import Banner from '@/components/Banner'
 import NavBar from '@/components/NavBar'
 import Hero from '@/components/Hero'
 import Footer from '@/components/Footer'
+import AboutBlock from '@/components/AboutBlock'
 
 
 const livvic = Livvic({ 
@@ -14,25 +15,33 @@ const livvic = Livvic({
 
 export default function Home() {
   return (
-    <>
+    <div className='{livvic.className} h-screen snap-y snap-mandatory overflow-y-scroll'>
       <Head>
         <title>Divas Basketball</title>
         <meta name="description" content="Divas Basketball" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={livvic.className}>
-      <Socials />
 
-      <Banner />
+      <header className='snap-center'>
+        <Socials />
+        <Banner />
+        <NavBar />
+      </header>
 
-      <NavBar />
+      <main>
+        <section >
+          <Hero />
+        </section>
 
-      <Hero />
-
-      <Footer />
+        <section className='snap-center' >
+          <AboutBlock />
+        </section>
 
       </main>
-    </>
+      <section>
+        <Footer />
+      </section>
+    </div>
   )
 }

@@ -19,6 +19,7 @@ import pic16 from '../public/carousel-pics/pic17.jpeg'
 import pic17 from '../public/carousel-pics/pic18.jpeg'
 import pic18 from '../public/carousel-pics/pic19.jpeg'
 import pic19 from '../public/carousel-pics/pic22.jpeg'
+import AboutBlock from "./AboutBlock";
 
 const images =[
     {src: pic2, id: 2}, 
@@ -44,7 +45,7 @@ const images =[
 const Hero = () => {
 
     return (
-        <div className="bg-hero-background h-screen w-screen">
+        <section className="bg-hero-background h-screen w-screen">
             <div className="text-navy-blue text-center
                 text-sm py-2 px-2 font-bold tracking-wide
                 sm:text-lg sm:tracking-wider
@@ -70,7 +71,9 @@ const Hero = () => {
                 px-2 
                 sm:px-3'
             >
-                <div className="bg-gradient-to-b  from-slate-100/80 rounded-lg p-2">
+
+
+                {/* <div className="bg-gradient-to-b  from-slate-100/80 rounded-lg p-2">
                     <p>This will be the main view on page load</p>
                     <p>There will be a background image</p>
                     <p>There will be an image overlay and a short blurb intro</p>
@@ -78,10 +81,10 @@ const Hero = () => {
                     <p>O - Obligation</p>
                     <p>S - Sacrifice</p>
                     <p>T - Team</p>
-                </div>
+                </div> */}
             </motion.div>
 
-        </div>
+        </section>
     )
 }
 
