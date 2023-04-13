@@ -4,7 +4,6 @@ import teamPic from '../public/pic3.jpeg'
 import divas from '../public/pic1.jpeg'
 import breakAway from '../public/pic23.jpeg'
 import Link from 'next/link'
-// import Button from '@mui/material/Button';
 import bball from '../public/bball.png'
 
 const PageBlocks = () => {

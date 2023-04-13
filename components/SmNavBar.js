@@ -29,27 +29,27 @@ const SmNavBar = () => {
   return (
         <div className='hidden sm:flex justify-center items-center text-white text-md w-full '>
             <div>
-                <Button
+                <button
                     id="basic-button"
-                    className='text-white px-8 transition ease-in-out hover:bg-white hover:text-navy-blue duration-300'
+                    className='uppercase text-white px-8 py-2 rounded-md transition ease-in-out hover:bg-white hover:text-navy-blue duration-300'
                 >
                     <Link href='/'>
                         Home
                     </Link>
-                </Button>
+                </button>
             </div>
 
             <div>
-                <Button
+                <button
                     id="basic-button"
                     aria-controls={openFirst ? 'basic-menu' : undefined}
                     aria-haspopup="true"
                     aria-expanded={openFirst ? 'true' : undefined}
                     onClick={handleFirstClick}
-                    className='text-white px-8 transition ease-in-out hover:bg-white hover:text-navy-blue duration-300'
+                    className='uppercase text-white px-8 py-2 rounded-md transition ease-in-out hover:bg-white hover:text-navy-blue duration-300'
                 >
                     About
-                </Button>
+                </button>
                 <Menu
                     id="basic-menu"
                     anchorEl={firstMenu}
@@ -73,16 +73,16 @@ const SmNavBar = () => {
             </div>
 
             <div>
-                <Button
+                <button
                     id="basic-button"
                     aria-controls={openSecond ? 'basic-menu' : undefined}
                     aria-haspopup="true"
                     aria-expanded={openSecond ? 'true' : undefined}
                     onClick={handleSecondClick}
-                    className='text-white px-8 transition ease-in-out hover:bg-white hover:text-navy-blue duration-300'
+                    className='uppercase text-white px-8 py-2 rounded-md transition ease-in-out hover:bg-white hover:text-navy-blue duration-300'
                 >
                     Teams
-                </Button>
+                </button>
                 <Menu
                     id="basic-menu"
                     anchorEl={secondMenu}
@@ -111,16 +111,16 @@ const SmNavBar = () => {
             </div>
 
             <div>
-                <Button
+                <button
                     id="basic-button"
                     aria-controls={openThird ? 'basic-menu' : undefined}
                     aria-haspopup="true"
                     aria-expanded={openThird ? 'true' : undefined}
                     onClick={handleThirdClick}
-                    className='text-white px-8 transition ease-in-out hover:bg-white hover:text-navy-blue duration-300'
+                    className='uppercase text-white px-8 py-2 rounded-md transition ease-in-out hover:bg-white hover:text-navy-blue duration-300'
                 >
                     Events
-                </Button>
+                </button>
                 <Menu
                     id="basic-menu"
                     anchorEl={thirdMenu}
@@ -144,16 +144,16 @@ const SmNavBar = () => {
             </div>
 
             <div>
-                <Button
+                <button
                     id="basic-button"
                     aria-controls={openFourth ? 'basic-menu' : undefined}
                     aria-haspopup="true"
                     aria-expanded={openFourth ? 'true' : undefined}
                     onClick={handleFourthMenu}
-                    className='text-white px-8 transition ease-in-out hover:bg-white hover:text-navy-blue duration-300'
+                    className='uppercase text-white px-8 py-2 rounded-md transition ease-in-out hover:bg-white hover:text-navy-blue duration-300'
                 >
                     Contact
-                </Button>
+                </button>
                 <Menu
                     id="basic-menu"
                     anchorEl={fourthMenu}
