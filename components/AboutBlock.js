@@ -9,19 +9,20 @@ const AboutBlock = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className='relative flex h-screen mx-auto'
+        className='relative flex items-center justify-evenly h-screen mx-auto'
     >
         <div>
             <Image 
                 src={teamPic}
                 alt='Girls team photo op'
                 height={'auto'}
+                width={700}
             />
 
         </div>
         <div>
             <h2>
-
+                Basketball Skills Prepare Athletes for Life
             </h2>
         </div>
     </motion.div>

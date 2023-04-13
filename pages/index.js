@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Livvic } from 'next/font/google'
+
 import Socials from '@/components/Socials'
 import Banner from '@/components/Banner'
 import NavBar from '@/components/NavBar'
@@ -8,14 +8,11 @@ import Footer from '@/components/Footer'
 import AboutBlock from '@/components/AboutBlock'
 
 
-const livvic = Livvic({ 
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '700', '900'],
-})
+
 
 export default function Home() {
   return (
-    <div className='{livvic.className} h-screen snap-y snap-mandatory overflow-y-scroll'>
+    <div className='h-screen snap-y snap-mandatory overflow-y-scroll'>
       <Head>
         <title>Divas Basketball</title>
         <meta name="description" content="Divas Basketball" />
