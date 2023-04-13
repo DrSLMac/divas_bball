@@ -4,7 +4,7 @@ import teamPic from '../public/pic3.jpeg'
 import divas from '../public/pic1.jpeg'
 import breakAway from '../public/pic23.jpeg'
 import Link from 'next/link'
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import bball from '../public/bball.png'
 
 const PageBlocks = () => {
@@ -19,7 +19,7 @@ const PageBlocks = () => {
             />
         </div>
 
-        <div className='flex flex-col items-center border bg-slate-200 border-navy-blue p-4'>
+        <div className='flex flex-col items-center overflow-y-scroll border bg-slate-200 border-navy-blue p-4'>
             <div className='text-center text-lg font-bold my-1'>
                 <h1>
                     Basketball Skills Prepare
@@ -32,14 +32,14 @@ const PageBlocks = () => {
 
             </div>
             <div className='flex w-[100%] justify-around items-center'>
-                <Button
+                <button
                     id="basic-button"
                     className='text-white bg-deep-red transition duration-300ease-in-out rounded-[2rem] h-[2rem] px-6 hover:bg-navy-blue hover:text-white hover:-translate-y-1 hover:scale-105 hover:shadow-lg'
                 >
                     <Link href='/about'>
                         Find Out More
                     </Link>
-                </Button>
+                </button>
                 <div>
                     <Image 
                         src={bball}
