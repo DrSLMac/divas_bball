@@ -14,23 +14,34 @@ const PageBlocks = () => {
                 src={teamPic}
                 alt='Girls team photo op'
                 fill
+                sizes='100vh'
                 className='p-4 rounded-md object-cover'
             />
         </div>
 
-        <div className='flex flex-col items-center overflow-y-scroll border bg-slate-200 border-navy-blue p-4'>
-            <div className='text-center text-lg font-bold my-1'>
+        <div className='flex flex-col items-center overflow-y-scroll border bg-slate-200
+                border-navy-blue p-4
+                xs:p-6
+        '>
+            <div className='text-center text-lg font-bold my-1
+                xs:my-6
+                sm:text-xl sm:my-8
+            '>
                 <h1>
                     Basketball Skills Prepare
                 </h1>
                 <h1>Athletes for Life</h1>
             </div>
-            <div className='mx-4 text-sm mt-1'>
+            <div className='mx-4 text-sm mt-1
+                    sm:mx-5 sm:text-md sm:leading-6
+            '>
                 <p className='indent-8'>Based out of Allen, TX, Divas Basketball is dedicated to the growth and development of the overall athlete. Divas Basketball is here to promote women&apos;s basketball from kindergarten all the way to adulthood. </p>
                 <p className='hidden'>We offer skill sessions to match every level out of Allen, Texas, so whether your child wants to learn basic skills, or wants to compete for college scholarships, we will provide an excellent learning environment, clean gym space, and plenty of great coaching to achieve those goals.</p>
 
             </div>
-            <div className='flex w-[100%] justify-around items-center'>
+            <div className='flex w-[100%] justify-around items-center
+                
+            '>
                 <button
                     id="basic-button"
                     className='text-white bg-deep-red transition duration-300ease-in-out rounded-[2rem] h-[2rem] px-6 hover:bg-navy-blue hover:text-white hover:-translate-y-1 hover:scale-105 hover:shadow-lg'
@@ -43,7 +54,7 @@ const PageBlocks = () => {
                     <Image 
                         src={bball}
                         alt='Basketball'
-                        className='py-2 rounded-md h-28 w-auto'
+                        className='py-2 rounded-md h-24 w-auto'
                     />
                 </div>
             </div>
@@ -59,6 +70,7 @@ const PageBlocks = () => {
                 src={divas}
                 alt='Girls team photo op'
                 fill
+                sizes='100vh'
                 className='p-4 rounded-md object-cover'
             />
         </div>
@@ -68,6 +80,7 @@ const PageBlocks = () => {
                 src={breakAway}
                 alt='Girls team photo op'
                 fill
+                sizes='100vh'
                 className='p-4 rounded-md object-cover'
             />
         </div>
