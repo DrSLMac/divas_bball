@@ -19,7 +19,8 @@ module.exports = {
       },
       colors: {
         'deep-red': '#470A11',
-        'navy-blue': '#101F3E'
+        'navy-blue': '#101F3E',
+        'light-red': '#F0949F'
       },
       backgroundImage: {
         'hero-background': "url('../public/dallas-skyline.png')",
