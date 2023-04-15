@@ -47,16 +47,6 @@ const Hero = () => {
 
     return (
         <section className="bg-hero-background h-screen w-screen">
-            <div className="text-navy-blue text-center
-                text-sm py-2 px-2 font-bold tracking-wide
-                sm:text-lg sm:tracking-wider
-                md:text-xl md:py-3 md:px-3 md:tracking-widest
-                lg:text-2xl lg:py-4 lg:px-4
-                xl:text-3xl xl:tracking-[.2em]"
-            >
-                <h1> 🏀 👟 Fast Feet ⛹🏽‍♀️ Fierce Hearts ❤️ 🏀 </h1>
-                <h1>✊🏾 Unstoppable Spirits ✊🏾</h1>
-            </div>
 
             <Carousel images={images} />
 

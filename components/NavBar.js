@@ -13,9 +13,15 @@ const NavBar = () => {
 
   return (
     <nav className='bg-navy-blue h-16 flex'>
-    
         <MobileNavBar />
-        <SmNavBar />
+    </nav>
+  )
+}
+
+export default NavBar
+
+
+        {/* <SmNavBar /> */}
         {/* small screen view of navbar */}
         {/* <div className='hidden sm:flex justify-center items-center text-white text-sm h-full w-full lg:hidden'> */}
             {/* <Link href='/'>
@@ -34,8 +40,3 @@ const NavBar = () => {
                 <p className='px-4 hover:border-b transition duration-150 hover:ease-in-out'>CONTACT</p>
             </Link> */}
         {/* </div> */}
-    </nav>
-  )
-}
-
-export default NavBar
