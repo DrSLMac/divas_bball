@@ -106,7 +106,7 @@ const Banner = () => {
                 lg:text-2xl lg:py-4 lg:px-4
                 xl:text-3xl xl:tracking-[.2em]"
             >
-            <h1 className={inspiration.className}>Don't Let the Name Fool You</h1>
+            <h1 className={inspiration.className}>Don&apos;t Let the Name Fool You</h1>
                 <h1>Fast Feet 🏀 Fierce Hearts</h1>
                 <h1>Unstoppable Spirits</h1>
         </div>

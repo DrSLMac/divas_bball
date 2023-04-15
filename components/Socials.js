@@ -7,7 +7,7 @@ import MobileNavBar from './MobileNavBar'
 
 const Socials = () => {
   return (
-    <section className='bg-deep-red flex justify-between
+    <section className='bg-deep-red flex justify-around
         mx-auto w-screen
         h-11   
         xl:px-10
