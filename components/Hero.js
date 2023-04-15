@@ -2,6 +2,12 @@ import Image from "next/image";
 import heroBackground from '../public/dallas-skyline.png'
 import { motion } from "framer-motion"
 import Carousel from "./Carousel";
+import { Inspiration } from 'next/font/google'
+
+const inspiration = Inspiration({ 
+  subsets: ['latin'],
+  weight: ['400'],
+})
 
 import pic1 from '../public/carousel-pics/pic7.jpeg'
 import pic2 from '../public/carousel-pics/pic6.jpeg'
@@ -45,35 +51,9 @@ const images =[
 const Hero = () => {
 
     return (
-        <section className="bg-hero-background h-screen w-screen">
-
+        <section className="bg-hero-background h-screen w-screen pt-6 text-center text-4xl">
+            <h1 className={inspiration.className}>Don&apos;t Let the Name Fool You</h1>
             <Carousel images={images} />
-
-            <motion.div
-                initial={{
-                    x: 500,
-                    opacity: 0,
-                    scale: 0.3
-                }}
-                animate={{ x: 0, opacity: 1, scale: 1 }}
-                transition={{ duration: 1.5}}
-                className='flex flex-row items-center text-navy-blue 
-                px-2 
-                sm:px-3'
-            >
-
-
-                {/* <div className="bg-gradient-to-b  from-slate-100/80 rounded-lg p-2">
-                    <p>This will be the main view on page load</p>
-                    <p>There will be a background image</p>
-                    <p>There will be an image overlay and a short blurb intro</p>
-                    <p>C - Commitment</p>
-                    <p>O - Obligation</p>
-                    <p>S - Sacrifice</p>
-                    <p>T - Team</p>
-                </div> */}
-            </motion.div>
-
         </section>
     )
 }
