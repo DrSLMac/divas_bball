@@ -76,9 +76,9 @@ const PageBlocks = () => {
                 xs:text-xl
             '>
                 <h1>
-                    Basketball Skills Prepare
+                    Build the Athlete
                 </h1>
-                <h1>Athletes for Life</h1>
+                <h1>Build the Person</h1>
             </div>
             <div className='mx-4 text-sm line-clamp-4 leading-4
                 xxs:leading-5
@@ -86,8 +86,8 @@ const PageBlocks = () => {
                 sm:mx-5 sm:text-md 
                 lg:line-clamp-none
             '>
-                <p className='indent-6'>Based out of Allen, TX, Divas Basketball is dedicated to the growth and development of the overall athlete. Divas Basketball is here to promote women&apos;s basketball from kindergarten all the way to adulthood. </p>
-                <p className='sm:block indent-6 sm:space-y-2'>We offer skill sessions to match every level out of Allen, Texas, so whether your child wants to learn basic skills, or wants to compete for college scholarships, we will provide an excellent learning environment, clean gym space, and plenty of great coaching to achieve those goals.</p>
+                <p className='indent-6'>The benefits of girls participating in team sports have been well documented. Girls build confidence as they build leadership. They learn to challenge themselves to grow in adversity and learn the power of effective teams.</p>
+                <p className='sm:block indent-6 sm:space-y-2'>As girls build their basketball skills, they are helping to level the playing field at all levels of life to help them reach their full potential.</p>
 
             </div>
             <div className='flex w-[100%] justify-around items-center

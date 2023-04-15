@@ -13,12 +13,12 @@ const MobileNavBar = () => {
   const handleNav = () => {
     setMenuOpen(!menuOpen)
   }
-//   className='bg-navy-blue h-16 flex lg:hidden'
+
   return (
     <>
         {/* Mobile navbar and hamburger menu */}
-        <div className='flex h-full w-full justify-between items-center px-8 sm:hidden'>
-            <Link href='/'>
+        <div className='flex h-full w-full pr-4 justify-end items-center sm:hidden'>
+            {/* <Link href='/'>
                 <Image 
                     src={divaLogo}
                     alt='Divas Logo'
@@ -26,7 +26,7 @@ const MobileNavBar = () => {
                     className='cursor-pointer'
                     priority
                 />
-            </Link>
+            </Link> */}
             <div onClick={handleNav} className='cursor-pointer'>
                 <AiOutlineMenu size={35} color='white'/>
             </div>

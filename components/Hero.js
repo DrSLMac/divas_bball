@@ -20,7 +20,6 @@ import pic14 from '../public/carousel-pics/pic14.jpeg'
 import pic15 from '../public/carousel-pics/pic16.jpeg'
 import pic16 from '../public/carousel-pics/pic2.jpeg'
 import pic17 from '../public/carousel-pics/pic22.jpeg'
-import AboutBlock from "./AboutBlock";
 
 const images =[
     {src: pic1, id: 2}, 

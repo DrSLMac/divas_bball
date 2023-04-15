@@ -175,7 +175,6 @@ const SmNavBar = () => {
                 </Menu>
             </div>
         </div>
-    // </nav>
   )
 }
 
