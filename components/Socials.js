@@ -2,16 +2,16 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { SocialIcon } from 'react-social-icons'
 import Link from 'next/link'
+import SmNavBar from './SmNavBar'
+import MobileNavBar from './MobileNavBar'
 
 const Socials = () => {
   return (
-    <section className='bg-deep-red flex items-start justify-between
+    <section className='bg-deep-red flex justify-around
         mx-auto w-screen
-        h-11  px-3
-        md:px-6
-        lg:px-20    
-        xl:px-40
-        2xl:px-60'
+        h-11   
+        xl:px-10
+        2xl:px-1'
     >
         <motion.div
             initial={{
@@ -40,6 +40,8 @@ const Socials = () => {
             />
         </motion.div>
 
+        <SmNavBar />
+
         <motion.div
                 initial={{
                     x: 500,
@@ -48,7 +50,7 @@ const Socials = () => {
                 }}
                 animate={{ x: 0, opacity: 1, scale: 0.9 }}
                 transition={{ duration: 1.5}}
-                className='flex flex-row items-center text-white cursor-pointer px-4 sm:px-3'
+                className='flex flex-row items-center text-white cursor-pointer px-1'
             >
                 <SocialIcon 
                     network="email"
@@ -62,6 +64,8 @@ const Socials = () => {
                     </p>
                 </Link>
             </motion.div>
+
+            <MobileNavBar />
     </section>
   )
 }

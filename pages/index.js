@@ -24,7 +24,7 @@ export default function Home() {
       <header className='snap-center'>
         <Socials />
         <Banner />
-        <NavBar />
+        {/* <NavBar /> */}
       </header>
 
       <main>
