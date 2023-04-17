@@ -87,31 +87,31 @@ const Contact = () => {
                     opacity: 0,
                     scale: 0.2
                 }}
+                whileInView={{ opacity: 1, X: 0 }}
                 animate={{ x: 0, opacity: 1, scale: 1 }}
                 transition={{ duration: 1.5}}
                 className='flex text-white cursor-pointer sm:hidden'
             >
-            <Link href='#/'>
-                <HomeIcon className="text-white pr-10 h-7 md:h-7 md:w-7"/>
-            </Link>
+                <Link href='#/'>
+                    <HomeIcon className="text-white pr-10 h-7 md:h-7 md:w-7"/>
+                </Link>
             </motion.div>
-            {/* <div className='z-90'>
-                <MobileNavBar />
-            </div> */}
         </div>
         
         {/* <div className='flex flex-col overflow-y-auto z-0'> */}
 
             <div className='flex flex-col overflow-y-auto items-center h-full
-                space-y-[3vh] py-8
-                sm:space-y-12
+                space-y-[1vh] py-6
+                xs:space-y-6
+                sm:space-y-10 sm:py-8
+                md:py-10
                 lg:space-y-12
                 '>
                 <h4 className='font-semibold text-center
-                    text-xl 
-                    
-                    md:text-2xl
-                    lg:text-3xl
+                    text-xl py-1
+                    xs:space-y-4 xs:text-2xl
+                    md:text-3xl
+                    lg:text-4xl lg:space-y-6
                     xl:text-4xl 
                     2xl:text-4xl
                 '>
@@ -119,14 +119,18 @@ const Contact = () => {
                     <br></br>
                     Looking for ways to get involved?{" "}
                     <br></br>
-                    <span className='decoration-deep-red underline'>Get in touch!</span>
+                    <div className={inspiration.className}>
+                    <span className='text-6xl lg:text-7xl'>
+                        Get in touch!
+                    </span>
+                    </div>
                 </h4>
 
                 <div className=' 
-                    space-y-1 text-base 
+                    text-base space-y-1
                     sm:space-y-2 sm:text-lg
                     md:space-y-4 md:text-xg
-                    lg:space-y-10 lg:text-2xl
+                    lg:text-2xl
                 '>
                     <div className='flex items-center space-x-2 md:space-x-5  justify-center'>
                         <PhoneIcon className="text-navy-blue h-5 md:h-7 md:w-7 animate-pulse"/>
