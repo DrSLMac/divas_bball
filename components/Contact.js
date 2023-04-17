@@ -1,5 +1,5 @@
 import React from 'react'
-import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid"
+import { PhoneIcon, MapPinIcon, EnvelopeIcon, HomeIcon } from "@heroicons/react/24/solid"
 import { motion } from 'framer-motion'
 import { SocialIcon } from 'react-social-icons'
 import { useForm } from "react-hook-form"
@@ -20,15 +20,15 @@ const inspiration = Inspiration({
 
 const Contact = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const onSubmit = data => console.log("contact form data: ", data);
-
-    console.log(watch("example"))
+    const onSubmit = (formData) => {
+        window.location.href = `mailto:texas.divas.basketball@gmail.com?subject=${formData.subject}&body=Hello, my name is ${formData.name}. ${formData.message} (${formData.email})`
+    };
 
   return (
-    <div className='relative h-screen flex flex-col text-center'>
-        <div className='flex h-16 w-screen items-center top-0 justify-around 
+    <div className='relative h-screen flex flex-col text-center bg-contact-bg bg-center bg-no-repeat bg-cover w-screen'>
+        <div className='z-90 flex h-16 w-screen items-center sticky top-0 justify-around 
             bg-gradient-to-r from-navy-blue from-20% to-deep-red
-        '>
+            '>
             <motion.div
                 initial={{
                     x: -500,
@@ -42,17 +42,6 @@ const Contact = () => {
                 className='flex items-center w-[100%] pl-6
                 xl:pl-10
                 '>
-                {/* <div className='sm:hidden'>
-                    <Link href='/'>
-                        <Image 
-                            src={divaLogo}
-                            alt='Divas Logo'
-                            width='150'
-                            className='cursor-pointer'
-                            priority
-                        />
-                    </Link>
-                </div> */}
                 <SocialIcon 
                     url="https://www.facebook.com/texasdivasbasketball" 
                     fgColor="white"
@@ -92,25 +81,36 @@ const Contact = () => {
                 <SmNavBar />
             </div>
             </motion.div>
-            <MobileNavBar />
+            <motion.div
+                initial={{
+                    x: 500,
+                    opacity: 0,
+                    scale: 0.2
+                }}
+                animate={{ x: 0, opacity: 1, scale: 1 }}
+                transition={{ duration: 1.5}}
+                className='flex text-white cursor-pointer sm:hidden'
+            >
+            <Link href='#/'>
+                <HomeIcon className="text-white pr-10 h-7 md:h-7 md:w-7"/>
+            </Link>
+            </motion.div>
+            {/* <div className='z-90'>
+                <MobileNavBar />
+            </div> */}
         </div>
         
-        <div className='-z-10 flex flex-col bg-contact-bg bg-opacity-30 bg-center bg-no-repeat bg-cover w-screen h-screen'>
-            <div className='absolute inset-0 w-full h-full bg-slate-300/50' ></div>
-            {/* <h3 className='uppercase
-                py-4 tracking-[15px] text-xl
-                md:top-20 md:tracking-[20px] md:text-2xl
-                lg:text-3xl lg:tracking-[22px]'>
-                Contact
-            </h3> */}
+        {/* <div className='flex flex-col overflow-y-auto z-0'> */}
 
-            <div className='flex flex-col items-center z-0
+            <div className='flex flex-col overflow-y-auto items-center
                 space-y-[3vh] py-8
+                sm:space-y-12
                 lg:space-y-12
                 '>
                 <h4 className='font-semibold text-center
-                    text-lg 
-                    md:text-xl
+                    text-xl 
+                    
+                    md:text-2xl
                     lg:text-3xl
                     xl:text-4xl 
                     2xl:text-4xl
@@ -122,12 +122,13 @@ const Contact = () => {
                     <span className='decoration-deep-red underline'>Get in touch!</span>
                 </h4>
 
-                <div className='z-0   
+                <div className=' 
                     space-y-1 text-base 
-                    md:space-y-4 md:text-lg
-                    lg:space-y-10 lg:text-xl
+                    sm:space-y-2 sm:text-lg
+                    md:space-y-4 md:text-xg
+                    lg:space-y-10 lg:text-2xl
                 '>
-                    <div className='flex z-0 items-center space-x-2 md:space-x-5  justify-center'>
+                    <div className='flex items-center space-x-2 md:space-x-5  justify-center'>
                         <PhoneIcon className="text-navy-blue h-5 md:h-7 md:w-7 animate-pulse"/>
                         <p>+1 (469) 545-5260</p>
                     </div>
@@ -147,23 +148,23 @@ const Contact = () => {
                 </div>
             
 
-                <form className='flex flex-col
-                text-sm space-y-2 w-[300px] shadow-xl
-                md:w-[450px]
-                lg:w-[600px] lg:text-base
-                '
-                onSubmit={handleSubmit(onSubmit)}
-                >
+                <form onSubmit={handleSubmit(onSubmit)}     
+                        className='flex flex-col
+                        text-sm space-y-2 w-[300px] shadow-xl
+                        sm:w-[375px]
+                        md:w-[450px]
+                        lg:w-[600px] lg:text-base
+                '>
                     <div className='flex justify-evenly
                         flex-col space-y-2
                         lg:flex-row lg:space-y-0 lg:justify-between
-                        '>
-                        <input  placeholder='Name' className='contactInput lg:w-[298px]' type="text" {...register('name')}/>
-                        <input placeholder='Email' className='contactInput lg:w-[298px]' type="email" {...register('email')}/>
+                    '>
+                        <input {...register('name')} placeholder='Name' className='contactInput lg:w-[298px]' type="text" />
+                        <input {...register('email')} placeholder='Email' className='contactInput lg:w-[298px]' type="email" />
                     </div>
-                    <div className='flex flex-col space-y-2' >
-                        <input placeholder='Subject' className='contactInput' type="text" {...register('subject')}/>
-                        <textarea  placeholder='Message' className='contactInput' {...register('message')}/>
+                    <div  className='flex flex-col space-y-2'>
+                        <input {...register('subject')} placeholder='Subject' className='contactInput' type="text"/>
+                        <textarea {...register('message')} placeholder='Message' className='contactInput' />
                     </div>
                     <button className='bg-gradient-to-r from-deep-red from-20% to-navy-blue rounded-md text-white
                         font-bold uppercase
@@ -174,10 +175,8 @@ const Contact = () => {
                     </button>
                 </form>
             </div>
-            <div className='absolute inset-x-0 bottom-0' >
-                <Footer />
-            </div>
-        </div>
+        {/* </div> */}
+        {/* <div className='absolute -z-10 inset-0 w-full h-full bg-slate-300/50' ></div> */}
     </div>
   )
 }

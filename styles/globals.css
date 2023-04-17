@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .contactInput {
-    @apply outline-none bg-slate-100/70 rounded-md border-b-2 shadow-2xl px-6 py-3 border-navy-blue text-deep-red placeholder-gray-500 transition-all focus:border-navy-blue/40 focus:text-deep-red/40 hover:border-navy-blue/90
+    @apply outline-none cursor-pointer bg-slate-100/80 rounded-md shadow-4xl px-6 py-3 border-b-4 border-navy-blue/40 text-deep-red placeholder-gray-500 transition-all focus:border-navy-blue/70 focus:text-deep-red hover:border-navy-blue
 }

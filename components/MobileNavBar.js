@@ -34,7 +34,7 @@ const MobileNavBar = () => {
 
         <div className={
             menuOpen 
-            ? 'fixed left-0 top-0 w-[65%] z-99 sm:hidden h-screen bg-[#ecf0f3] p-5 ease-in duration-500' 
+            ? 'fixed left-0 top-0 w-[65%] sm:hidden h-screen bg-[#ecf0f3] p-5 ease-in duration-500' 
             : 'fixed left-[-100%] z-99 top-0 p-10 ease-in duration-500'
         }>
             <div className='flex z-70 w-full items-center justify-end pt-10'>

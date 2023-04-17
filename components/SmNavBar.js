@@ -35,7 +35,7 @@ const SmNavBar = () => {
                     id="basic-button"
                     className='uppercase text-white px-8 py-2 rounded-md transition ease-in-out hover:bg-white hover:text-navy-blue duration-300'
                 >
-                    <Link href='/'>
+                    <Link href='#/'>
                         Home
                     </Link>
                 </button>

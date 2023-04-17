@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header id='/' className='snap-center'>
+      <header id='/' className='snap-start'>
         <Socials />
         <Banner />
         {/* <NavBar /> */}
@@ -32,14 +32,17 @@ export default function Home() {
           <PageBlocks />
         </section>
 
-        <section className='snap-start'>
+        <section className='snap-center'>
           <Contact />
         </section>
 
+        <div className='relative snap-center' >
+            <footer className='inset-x-0 bottom-0'>
+                <Footer />
+            </footer>
+        </div>
       </main>
-      {/* <section className='snap-end'>
-        <Footer />
-      </section> */}
+
     </div>
   )
 }
