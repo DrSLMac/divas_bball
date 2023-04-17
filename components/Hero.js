@@ -52,7 +52,9 @@ const Hero = () => {
 
     return (
         <section className="bg-hero-background h-screen w-screen pt-6 text-center text-4xl">
+        <div className="sm:hidden">
             <h1 className={inspiration.className}>Don&apos;t Let the Name Fool You</h1>
+        </div>
             <Carousel images={images} />
         </section>
     )

@@ -5,6 +5,7 @@ import NavBar from '@/components/NavBar'
 import Hero from '@/components/Hero'
 import Footer from '@/components/Footer'
 import PageBlocks from '@/components/PageBlocks'
+import Contact from '@/components/Contact'
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className='snap-center'>
+      <header id='/' className='snap-center'>
         <Socials />
         <Banner />
         {/* <NavBar /> */}
@@ -29,6 +30,10 @@ export default function Home() {
 
         <section className='snap-center' >
           <PageBlocks />
+        </section>
+
+        <section className='snap-start'>
+          <Contact />
         </section>
 
       </main>

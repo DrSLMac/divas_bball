@@ -83,17 +83,16 @@ const inspiration = Inspiration({
 
 const Banner = () => {
   return (
-    <div className='hidden sm:flex justify-evenly items-center 
-        h-full
-        bg-gradient-to-b from-navy-blue from-5% via-slate-100 via-50% to-navy-blue to-95%
+    <div className='hidden sm:flex justify-around items-center h-full
+        bg-gradient-to-r from-navy-blue from-[42%] via-slate-300 via-[70%] to-slate-100
 
     '>
-        <div className='sm:pl-2'>
+        <div className=''>
             <Link href='/'>
                 <Image 
                     src={divaLogo}
                     alt='Diva text over outline of Texas'
-                    className='lg:h-[20vh] w-auto'
+                    className='sm:h-[8vh] lg:h-[9vh] xl:h-[10vh] 2xl:h-[12vh] w-auto'
                     priority
                 />
             </Link>
@@ -106,7 +105,9 @@ const Banner = () => {
                 lg:text-2xl lg:py-4 
                 xl:text-3xl"
             >
-            <h1 className={inspiration.className}>Don&apos;t Let the Name Fool You</h1>
+            <div className='sm:text-3xl' >
+                <h1 className={inspiration.className}>Don&apos;t Let the Name Fool You</h1>
+            </div>
                 <h1>Fast Feet 🏀 Fierce Hearts</h1>
                 <h1>Unstoppable Spirits</h1>
         </div>

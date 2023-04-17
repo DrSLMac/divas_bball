@@ -26,7 +26,10 @@ const SmNavBar = () => {
     const closeFourth = () => setFourthMenu(null);
 
   return (
-        <div className='hidden sm:flex justify-center items-center text-white text-md '>
+        <div className='hidden sm:flex justify-center items-center text-white text-md 
+        lg:pr-6
+        xl:pr-10
+        '>
             <div>
                 <button
                     id="basic-button"
@@ -45,7 +48,7 @@ const SmNavBar = () => {
                     aria-haspopup="true"
                     aria-expanded={openFirst ? 'true' : undefined}
                     onClick={handleFirstClick}
-                    className='uppercase text-white px-8 py-2 rounded-md transition ease-in-out hover:bg-white hover:text-navy-blue duration-300'
+                    className='uppercase text-white px-4 py-2 rounded-md transition ease-in-out hover:bg-white hover:text-navy-blue duration-300'
                 >
                     About
                 </button>
@@ -78,8 +81,9 @@ const SmNavBar = () => {
                     aria-haspopup="true"
                     aria-expanded={openSecond ? 'true' : undefined}
                     onClick={handleSecondClick}
-                    className='uppercase text-white px-8 py-2 rounded-md transition ease-in-out hover:bg-white hover:text-navy-blue duration-300'
-                >
+                    className='uppercase text-white px-4 py-2 rounded-md transition ease-in-out hover:bg-white hover:text-navy-blue duration-300
+                    
+                    '>
                     Teams
                 </button>
                 <Menu
@@ -116,7 +120,7 @@ const SmNavBar = () => {
                     aria-haspopup="true"
                     aria-expanded={openThird ? 'true' : undefined}
                     onClick={handleThirdClick}
-                    className='uppercase text-white px-8 py-2 rounded-md transition ease-in-out hover:bg-white hover:text-navy-blue duration-300'
+                    className='uppercase text-white px-4 py-2 rounded-md transition ease-in-out hover:bg-white hover:text-navy-blue duration-300'
                 >
                     Events
                 </button>
@@ -149,7 +153,7 @@ const SmNavBar = () => {
                     aria-haspopup="true"
                     aria-expanded={openFourth ? 'true' : undefined}
                     onClick={handleFourthMenu}
-                    className='uppercase text-white px-8 py-2 rounded-md transition ease-in-out hover:bg-white hover:text-navy-blue duration-300'
+                    className='uppercase text-white px-4 py-2 rounded-md transition ease-in-out hover:bg-white hover:text-navy-blue duration-300'
                 >
                     Contact
                 </button>

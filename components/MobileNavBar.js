@@ -34,10 +34,10 @@ const MobileNavBar = () => {
 
         <div className={
             menuOpen 
-            ? 'fixed left-0 top-0 w-[65%] sm:hidden h-screen bg-[#ecf0f3] p-5 ease-in duration-500' 
-            : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
+            ? 'fixed left-0 top-0 w-[65%] z-99 sm:hidden h-screen bg-[#ecf0f3] p-5 ease-in duration-500' 
+            : 'fixed left-[-100%] z-99 top-0 p-10 ease-in duration-500'
         }>
-            <div className='flex w-full items-center justify-end pt-10'>
+            <div className='flex z-70 w-full items-center justify-end pt-10'>
                 <div onClick={handleNav} className='cursor-pointer'>
                     <AiOutlineClose size={25}/>
                 </div>
@@ -45,7 +45,7 @@ const MobileNavBar = () => {
             <div className='flex-col py-4'>
                 <ul>
                 <Accordion >
-                        <Link href='/'>
+                        <Link href='#/'>
                             <li onClick={() => setMenuOpen(false)}
                                 className='px-4 py-4 transition ease-in-out hover:border-b-2 hover:font-bold duration-300'>
                                 HOME

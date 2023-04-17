@@ -7,27 +7,27 @@ import MobileNavBar from './MobileNavBar'
 import Image from 'next/image'
 import divaLogo from '../public/divas.png'
 
+// xl:px-10
+// 2xl:px-1
 const Socials = () => {
   return (
-    <section className='flex items-center
-         w-screen bg-gradient-to-r from-navy-blue from-20% to-deep-red
+    <section className='sticky flex items-center z-20 top-0
+        w-screen bg-gradient-to-r from-navy-blue from-20% to-deep-red
         h-16
-        xl:px-10
-        2xl:px-1'
-    >
+    '>
 
-        {/* <div className='flex'> */}
-            <motion.div
-                initial={{
-                    x: -500,
-                    opacity: 0,
-                    scale: 0.3,
-                }}
-                animate={{ x: 0, opacity: 1, scale: 1.3 }}
-                transition={{ duration: 1.5 }}
-                className='flex items-center pl-10 pr-2 w-[100%]'
-            >
-            <div>
+        <motion.div
+            initial={{
+                x: -500,
+                opacity: 0,
+                scale: 0.3,
+            }}
+            animate={{ x: 0, opacity: 1, scale: 1 }}
+            transition={{ duration: 1.5 }}
+            className='flex items-center pl-4 pr-2 w-[100%]
+            xl:pl-10
+            '>
+            <div className='sm:hidden'>
                 <Link href='/'>
                     <Image 
                         src={divaLogo}
@@ -72,23 +72,10 @@ const Socials = () => {
                 className='flex text-white cursor-pointer'
             >
 
-            <div className='hidden'>
-                <SocialIcon 
-                    network="email"
-                    fgColor="white"
-                    bgColor="transparent"
-                    url="/contact"
-                />
-                <Link href='/contact'>
-                    <p className='uppercase sm:inline-flex text-sm'>
-                        GET IN TOUCH
-                    </p>
-                </Link>
-            </div>
+            <SmNavBar />
             </motion.div>
         {/* </div> */}
 
-        <SmNavBar />
 
         <MobileNavBar />
     </section>
@@ -96,3 +83,18 @@ const Socials = () => {
 }
 
 export default Socials
+
+
+            // <div className='hidden'>
+            //     <SocialIcon 
+            //         network="email"
+            //         fgColor="white"
+            //         bgColor="transparent"
+            //         url="/contact"
+            //     />
+            //     <Link href='/contact'>
+            //         <p className='uppercase sm:inline-flex text-sm'>
+            //             GET IN TOUCH
+            //         </p>
+            //     </Link>
+            // </div>
