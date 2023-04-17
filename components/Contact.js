@@ -102,7 +102,7 @@ const Contact = () => {
         
         {/* <div className='flex flex-col overflow-y-auto z-0'> */}
 
-            <div className='flex flex-col overflow-y-auto items-center
+            <div className='flex flex-col overflow-y-auto items-center h-full
                 space-y-[3vh] py-8
                 sm:space-y-12
                 lg:space-y-12
@@ -175,8 +175,11 @@ const Contact = () => {
                     </button>
                 </form>
             </div>
+            {/* <div className='relative snap-center' > */}
+            <footer className='sticky bottom-0'>
+                <Footer />
+            </footer>
         {/* </div> */}
-        {/* <div className='absolute -z-10 inset-0 w-full h-full bg-slate-300/50' ></div> */}
     </div>
   )
 }

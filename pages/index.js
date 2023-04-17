@@ -36,11 +36,11 @@ export default function Home() {
           <Contact />
         </section>
 
-        <div className='relative snap-center' >
+        {/* <div className='relative snap-center' >
             <footer className='inset-x-0 bottom-0'>
                 <Footer />
             </footer>
-        </div>
+        </div> */}
       </main>
 
     </div>
