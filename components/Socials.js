@@ -20,11 +20,11 @@ const Socials = () => {
             initial={{
                 x: -500,
                 opacity: 0,
-                scale: 0.3,
+                scale: 0.2,
             }}
-            animate={{ x: 0, opacity: 1, scale: 1 }}
+            animate={{ x: 0, opacity: 1, scale: 1.1 }}
             transition={{ duration: 1.5 }}
-            className='flex items-center pl-4 pr-2 w-[100%]
+            className='flex items-center pl-6 pr-2 w-[100%]
             xl:pl-10
             '>
             <div className='sm:hidden'>
@@ -65,9 +65,9 @@ const Socials = () => {
                 initial={{
                     x: 500,
                     opacity: 0,
-                    scale: 0.3
+                    scale: 0.2
                 }}
-                animate={{ x: 0, opacity: 1, scale: 0.9 }}
+                animate={{ x: 0, opacity: 1, scale: 1 }}
                 transition={{ duration: 1.5}}
                 className='flex text-white cursor-pointer'
             >

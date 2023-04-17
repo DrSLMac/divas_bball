@@ -37,9 +37,9 @@ export default function Home() {
         </section>
 
       </main>
-      <section className='snap-end'>
+      {/* <section className='snap-end'>
         <Footer />
-      </section>
+      </section> */}
     </div>
   )
 }
