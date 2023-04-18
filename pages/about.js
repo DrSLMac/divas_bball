@@ -34,36 +34,36 @@ const About = () => {
           '>
 
             <div>
-              <h2 className='text-xl font-medium uppercase pb-2 sm:pb-4'>History</h2>
+              <h2 className='text-xl xl:text-2xl font-medium uppercase pb-2 sm:pb-4'>History</h2>
             </div>
 
             <div>
-              <p className='sm:block indent-6 lg:pr-[20vw]'>
+              <p className='sm:block indent-6 lg:pr-[20vw] xl:text-lg'>
               Divas Basketball was founded in ~year~ by ~person~ as a girls&apos; club basketball program. It was created to provide an elite platform for families who are looking for a more rigorous, competitive environment for their athletes. Our Girls AAU Basketball teams in North Texas promote player development and college recruitment. 
               </p>
 
               <br></br>
 
               <div>
-                <h2 className='text-xl font-medium uppercase pb-2 sm:pb-4
+                <h2 className='text-xl xl:text-2xl font-medium uppercase pb-2 sm:pb-4
                 '>Player Development</h2>
               </div>
 
-              <p className='sm:block indent-6 sm:space-y-2 lg:pr-[20vw] xl:pr-[21vw]'>
+              <p className='sm:block indent-6 sm:space-y-2 lg:pr-[20vw] xl:pr-[21vw] xl:text-lg'>
               The goal of Divas Basketball is to develop players, through individual and team training, so that they are well-rounded athletes and marketable to college recruiters. While the goal may be a college scholarship, the hope is that each player is challenged to thrive as a basketball player. The athletes are exposed to multiple programs designed to grow their skill sets, instill fundamentally sound habits, increase their conditioning, strength and agility to prevent injuries, and expand their basketball IQ. The Divas coaches train them in a way that allows them to consistently perform against national competition. 
               </p>
 
               <br></br>
 
               <div>
-                <h2 className='text-xl font-medium uppercase pb-2 sm:pb-4'>Knowing the C.O.S.T.</h2>
+                <h2 className='text-xl xl:text-2xl font-medium uppercase pb-2 sm:pb-4'>Knowing the C.O.S.T.</h2>
               </div>
 
-              <p className='indent-6 sm:space-y-4'>
+              <p className='indent-6 sm:space-y-4 xl:text-lg'>
               In order to maximize overall growth, development, and opportunities for college exposure, each player must understand the COST:
               </p>
 
-              <div className='indent-0 px-2 py-1 sm:leading-7'>
+              <div className='indent-0 px-2 py-1 sm:leading-7 xl:text-lg xl:leading-8 xl:px-8'>
                 <p>
                   <span className='font-semibold'>C</span> stands for the commitment required of each athlete
                   <br></br>
