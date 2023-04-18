@@ -8,9 +8,9 @@ import Link from 'next/link'
 
 const About = () => {
   return (
-    <div className='relative flex flex-col h-screen snap-start'>
+    <div className='relative flex flex-col h-screen  snap-start'>
         <PageHeader pageTitle='About' />
-        <section className=' bg-slate-400'>
+        <section className='flex-grow bg-slate-400'>
           <div className='absolute right-8 -top-40'>
             <Image 
                 src={sheBaller}
@@ -25,14 +25,14 @@ const About = () => {
             </div>
             <div>
               <p className='sm:block indent-6 sm:space-y-2'>
-              Divas Basketball was founded in ~year~ by ~person~ as a girls&apos; club basketball program. It was created to provide an elite platform for families who are looking for amore rigorous, competitive environment for their athletes. Our Girls AAU Basketball team in North Texas promotes player development and college recruitment. 
+              Divas Basketball was founded in ~year~ by ~person~ as a girls&apos; club basketball program. It was created to provide an elite platform for families who are looking for a more rigorous, competitive environment for their athletes. Our Girls AAU Basketball teams in North Texas promote player development and college recruitment. 
               </p>
               <br></br>
               <div>
                 <h2 className='text-xl font-medium uppercase pb-2'>Player Development</h2>
               </div>
               <p className='sm:block indent-6 sm:space-y-2'>
-              The goal of Divas Basketball is to develop players, through individual and team training, so that they are well-rounded and marketable to college recruiters. While the goal may be a college scholarship, the hope is that each player is challenged to thrive as a basketball player. The athletes are exposed to multiple programs designed to grow their skill sets, instill fundamentally sound habits, increase their conditioning, strength and agility to prevent injuries, and expand their basketball IQ. The Divas coaches train them in a way that allows them to consistently perform against national competition. 
+              The goal of Divas Basketball is to develop players, through individual and team training, so that they are well-rounded athletes and marketable to college recruiters. While the goal may be a college scholarship, the hope is that each player is challenged to thrive as a basketball player. The athletes are exposed to multiple programs designed to grow their skill sets, instill fundamentally sound habits, increase their conditioning, strength and agility to prevent injuries, and expand their basketball IQ. The Divas coaches train them in a way that allows them to consistently perform against national competition. 
               </p>
               <br></br>
               <div>
@@ -66,10 +66,10 @@ const About = () => {
                 </Link>
             </button>
         </div>
-          <footer className='sticky bottom-0'>
-              <Footer />
-          </footer>
         </section>
+        <footer className='sticky bottom-0'>
+            <Footer />
+        </footer>
     </div>
   )
 }

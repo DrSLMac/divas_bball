@@ -28,11 +28,11 @@ export default function Home() {
           <Hero />
         </section>
 
-        <section className='snap-center' >
+        <section className='snap-start' >
           <PageBlocks />
         </section>
 
-        <section className='snap-center'>
+        <section className='snap-start'>
           <Contact />
         </section>
 

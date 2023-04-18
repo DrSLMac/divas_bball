@@ -11,30 +11,28 @@ const inspiration = Inspiration({
 
 const PageHeader = ({pageTitle}) => {
   return (
-    <div className='bg-gradient-to-b from-navy-blue from-20% via-deep-red via-40% to-slate-400'>
-        <section className='flex justify-start top-0 px-16 h-28 text-white w-screen
-        '>
+    <section className='flex flex-col items-center pr-40 space-y-4 py-6 text-white w-screen bg-gradient-to-b from-navy-blue from-20% via-deep-red via-40% to-slate-400 h-44'>
+        {/* <div className='w-[50%]'> */}
             <div className={inspiration.className}>
-                <h1 className='text-7xl mt-6' >{pageTitle}</h1>
+                <h1 className='text-7xl' >{pageTitle}</h1>
             </div>
-        </section>
-        <div className='flex w-[100%] px-12 py-4
-            '>
-            <button
-                id="basic-button"
-                className='text-white bg-deep-red transition duration-300 ease-in-out rounded-[2rem]
-                hover:bg-navy-blue hover:text-white hover:-translate-y-1 hover:scale-105 hover:shadow-lg
-                h-[2rem] px-5 text-sm
-                '>
-                <Link href='/'>
-                <div className='flex items-center'>
-                    <HomeIcon className="text-white pr-2 h-4 md:h-7 md:w-7"/>
-                    Return to Home
-                </div>
-                </Link>
-            </button>
-        </div>
-    </div>
+            <div className='py-4'>
+                <button
+                    id="basic-button"
+                    className='text-white bg-deep-red transition duration-300 ease-in-out rounded-[2rem]
+                    hover:bg-navy-blue hover:text-white hover:-translate-y-1 hover:scale-105 hover:shadow-lg
+                    h-[2rem] px-6 text-sm
+                    '>
+                    <Link href='/'>
+                    <div className='flex items-center'>
+                        <HomeIcon className="text-white pr-3 h-4 md:h-7 md:w-7"/>
+                        Return to Home
+                    </div>
+                    </Link>
+                </button>
+            </div>
+        {/* </div> */}
+    </section>
   )
 }
 
