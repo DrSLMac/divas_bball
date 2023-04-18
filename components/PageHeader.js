@@ -11,12 +11,16 @@ const inspiration = Inspiration({
 
 const PageHeader = ({pageTitle}) => {
   return (
-    <section className='flex flex-col items-center pr-40 space-y-4 py-6 text-white w-screen bg-gradient-to-b from-navy-blue from-20% via-deep-red via-40% to-slate-400 h-44'>
+    <section className='flex flex-col items-center h-44 xl:h-56 text-white w-screen
+    bg-gradient-to-b from-navy-blue from-20% via-deep-red via-40% to-slate-400
+    pr-40 space-y-4 py-6
+    sm:pr-[24vh] xl:pr-0
+    '>
         {/* <div className='w-[50%]'> */}
             <div className={inspiration.className}>
-                <h1 className='text-7xl' >{pageTitle}</h1>
+                <h1 className='text-7xl xl:text-8xl' >{pageTitle}</h1>
             </div>
-            <div className='py-4'>
+            <div className='py-4 xl:py-8'>
                 <button
                     id="basic-button"
                     className='text-white bg-deep-red transition duration-300 ease-in-out rounded-[2rem]
