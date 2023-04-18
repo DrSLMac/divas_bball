@@ -14,7 +14,7 @@ const Footer = () => {
                 src={divaLogo}
                 alt='Divas Logo'
                 width='150'
-                className='cursor-pointer'
+                className='cursor-pointer pl-1'
                 priority
             />
         </Link>
