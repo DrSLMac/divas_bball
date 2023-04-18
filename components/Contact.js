@@ -4,12 +4,9 @@ import { motion } from 'framer-motion'
 import { SocialIcon } from 'react-social-icons'
 import { useForm } from "react-hook-form"
 import Link from 'next/link'
-import divaLogo from '../public/divas.png'
-import Image from 'next/image'
 import SmNavBar from './SmNavBar'
-import { Inspiration } from 'next/font/google'
-import MobileNavBar from './MobileNavBar'
 import Footer from './Footer'
+import { Inspiration } from 'next/font/google'
 
 const inspiration = Inspiration({ 
   subsets: ['latin'],
