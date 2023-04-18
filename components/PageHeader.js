@@ -12,7 +12,7 @@ const inspiration = Inspiration({
 const PageHeader = ({pageTitle}) => {
   return (
     <div className='bg-gradient-to-b from-navy-blue from-20% via-deep-red via-40% to-slate-400'>
-        <section className='sticky flex justify-start top-0 px-16 h-28 text-white w-screen
+        <section className='flex justify-start top-0 px-16 h-28 text-white w-screen
         '>
             <div className={inspiration.className}>
                 <h1 className='text-7xl mt-6' >{pageTitle}</h1>
