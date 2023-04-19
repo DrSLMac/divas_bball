@@ -14,7 +14,7 @@ const UnderConstruction = () => {
     <div className='flex flex-col items-center p-20 text-7xl text-center'>
       <div className='pb-4'>
         <h1>Please Be Patient</h1>
-        <h2 className={inspiration.className}>We're Moving as Fast as We Can</h2>
+        <h2 className={inspiration.className}>W&aposre Moving as Fast as We Can</h2>
       </div>
         <Image 
           src={construction}
