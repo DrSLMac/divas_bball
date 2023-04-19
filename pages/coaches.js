@@ -12,25 +12,27 @@ const Coaches = () => {
         <PageHeader pageTitle='Coaches' />
         <section className='flex-grow bg-slate-400'>
 
-          <div className='absolute right-10 -top-40
-              sm:right-14 animate-pulse xl:right-10 2xl:right-12'>
+          <div className='absolute animate-pulse right-10 -top-40
+              sm:right-8 sm:-rotate-[18deg] sm:-top-20
+              xl:right-10 2xl:right-12'>
             <Image 
                 src={sheBaller}
                 alt='Divas Logo'
                 width='110'
-                className='mt-44 xs:w-[8rem] sm:w-[9rem] lg:w-64 xl:w-[20rem] 2xl:w-[24rem]'
+                className='mt-44 xs:w-[7rem] sm:w-[20rem] lg:w-64 xl:w-[20rem] 2xl:w-[24rem]'
             />
           </div>
 
           <div className='grid py-8 px-10 gap-4
+            sm:px-12 sm:mr-56
             lg:grid-cols-3 lg:grid-rows-2'>
 
             <Link href='/'>
-              <div id='1' className='flex items-center justify-around p-1 bg-stone-100 border-1 border-navy-blue rounded-md shadow-4xl'>
+              <div id='1' className='flex items-center justify-around p-2 bg-stone-100 border-1 border-navy-blue rounded-md shadow-4xl'>
                 <Image 
                   src={placeholder}
                   alt='coach headshot'
-                  width='175'
+                  width='160'
                   height='auto'
                   className='cursor-pointer'
                 />
@@ -46,7 +48,7 @@ const Coaches = () => {
                   <Image 
                       src={placeholder}
                       alt='coach headshot'
-                      width='175'
+                      width='160'
                       height='auto'
                       className='cursor-pointer'
                   />
@@ -62,7 +64,7 @@ const Coaches = () => {
                   <Image 
                     src={placeholder}
                     alt='coach headshot'
-                    width='175'
+                    width='160'
                     height='auto'
                     className='cursor-pointer'
                   />
@@ -78,7 +80,7 @@ const Coaches = () => {
                   <Image 
                       src={placeholder}
                       alt='coach headshot'
-                      width='175'
+                      width='160'
                       height='auto'
                       className='cursor-pointer'
                   />
@@ -94,7 +96,7 @@ const Coaches = () => {
                   <Image 
                       src={placeholder}
                       alt='coach headshot'
-                      width='175'
+                      width='160'
                       height='auto'
                       className='cursor-pointer'
                     />
@@ -110,7 +112,7 @@ const Coaches = () => {
                 <Image 
                       src={placeholder}
                       alt='coach headshot'
-                      width='175'
+                      width='160'
                       height='auto'
                       className='cursor-pointer'
                     />
