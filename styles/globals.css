@@ -7,7 +7,7 @@
 }
 
 .coachProfile {
-    @apply flex items-center justify-around lg:flex-col p-2 bg-stone-300 border-2 border-navy-blue rounded-md shadow-4xl hover:bg-stone-400 transition-all focus:border-deep-red
+    @apply flex items-center justify-around lg:flex-col p-2 bg-stone-300 border-2 border-navy-blue rounded-md shadow-4xl hover:bg-stone-400 transition-all hover:translate-y-1 hover:scale-105 active:shadow-lg
     lg:h-[16rem] lg:w-[16rem]
     xl:w-[18rem]
     2xl:w-[20rem]
@@ -15,4 +15,10 @@
 
 .coachPic {
     @apply cursor-pointer lg:w-40
+}
+
+.pageButtons {
+    @apply flex items-center text-white bg-deep-red rounded-[2rem] shadow-2xl duration-300 ease-in-out transition-all 
+    hover:bg-navy-blue hover:text-white hover:-translate-y-1 hover:scale-105 hover:shadow-4xl
+    active:translate-y-px active:shadow-lg
 }

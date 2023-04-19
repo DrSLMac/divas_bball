@@ -1,9 +1,10 @@
 import React from 'react'
+import UnderConstruction from '@/components/UnderConstruction'
 
-const upcomingEvents = () => {
+const UpcomingEvents = () => {
   return (
-    <div>upcomingEvents</div>
+    <UnderConstruction />
   )
 }
 
-export default upcomingEvents
+export default UpcomingEvents

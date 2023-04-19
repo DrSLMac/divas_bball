@@ -81,8 +81,7 @@ const About = () => {
             '>
             <button
                 id="basic-button"
-                className=' flex items-center text-white bg-deep-red transition duration-300 ease-in-out rounded-[2rem]
-                hover:bg-navy-blue hover:text-white hover:-translate-y-1 hover:scale-105 hover:shadow-lg
+                className='pageButtons
                 h-[2.5rem] px-6 text-sm lg:text-lg lg:px-8 lg:py-4 xl:py-6
                 '>
                 <Link href='/coaches'>

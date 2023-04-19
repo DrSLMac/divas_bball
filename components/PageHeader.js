@@ -1,7 +1,7 @@
 import React from 'react'
-import { Inspiration } from 'next/font/google'
 import Link from 'next/link'
 import { HomeIcon } from "@heroicons/react/24/solid"
+import { Inspiration } from 'next/font/google'
 
 const inspiration = Inspiration({ 
   subsets: ['latin'],
@@ -23,8 +23,7 @@ const PageHeader = ({pageTitle}) => {
         <div className='py-4 xl:py-6'>
             <button
                 id="basic-button"
-                className='text-white bg-deep-red transition duration-300 ease-in-out rounded-[2rem]
-                hover:bg-navy-blue hover:text-white hover:-translate-y-1 hover:scale-105 hover:shadow-lg
+                className='pageButtons
                 h-[2rem] px-6 text-sm
                 '>
                 <Link href='/'>

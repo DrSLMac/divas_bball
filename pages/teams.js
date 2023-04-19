@@ -1,10 +1,9 @@
 import React from 'react'
+import UnderConstruction from '@/components/UnderConstruction'
 
 const Teams = () => {
   return (
-    <div className='p-20'>
-        The page will show an overview of all Teams
-    </div>
+    <UnderConstruction />
   )
 }
 

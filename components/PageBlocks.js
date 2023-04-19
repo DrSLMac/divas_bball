@@ -48,8 +48,7 @@ const PageBlocks = () => {
             '>
                 <button
                     id="basic-button"
-                    className='text-white bg-deep-red transition duration-300 ease-in-out rounded-[2rem]
-                    hover:bg-navy-blue hover:text-white hover:-translate-y-1 hover:scale-105 hover:shadow-lg
+                    className='pageButtons
                     h-[2rem] px-6 text-sm
                     '>
                     <Link href='/about'>
@@ -94,8 +93,7 @@ const PageBlocks = () => {
             '>
                 <button
                     id="basic-button"
-                    className='text-white bg-deep-red transition duration-300 ease-in-out rounded-[2rem]
-                    hover:bg-navy-blue hover:text-white hover:-translate-y-1 hover:scale-105 hover:shadow-lg
+                    className='pageButtons
                     h-[2rem] px-6 text-sm
                     '>
                     <Link href='/about'>
@@ -159,8 +157,7 @@ const PageBlocks = () => {
             '>
                 <button
                     id="basic-button"
-                    className='text-white bg-deep-red transition duration-300 ease-in-out rounded-[2rem]
-                    hover:bg-navy-blue hover:text-white hover:-translate-y-1 hover:scale-105 hover:shadow-lg
+                    className='pageButtons
                     h-[2rem] px-6 text-sm
                     '>
                     <Link href='/about'>
