@@ -7,5 +7,12 @@
 }
 
 .coachProfile {
-    @apply flex items-center justify-around lg:flex-col p-2 bg-stone-300 border-2 border-navy-blue rounded-md shadow-4xl
+    @apply flex items-center justify-around lg:flex-col p-2 bg-stone-300 border-2 border-navy-blue rounded-md shadow-4xl hover:bg-stone-400 transition-all focus:border-deep-red
+    lg:h-[16rem] lg:w-[16rem]
+    xl:w-[18rem]
+    2xl:w-[20rem]
+}
+
+.coachPic {
+    @apply cursor-pointer lg:w-40
 }

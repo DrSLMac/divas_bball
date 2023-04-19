@@ -16,6 +16,7 @@ module.exports = {
       screens: {
         'xxs': '400px',
         'xs': '450px',
+        'midmd': '896px',
       },
       colors: {
         'deep-red': '#470A11',

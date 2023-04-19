@@ -20,7 +20,7 @@ const PageHeader = ({pageTitle}) => {
         <div className={inspiration.className}>
             <h1 className='text-7xl xl:text-8xl'>{pageTitle}</h1>
         </div>
-        <div className='py-4 xl:py-8'>
+        <div className='py-4 xl:py-6'>
             <button
                 id="basic-button"
                 className='text-white bg-deep-red transition duration-300 ease-in-out rounded-[2rem]
