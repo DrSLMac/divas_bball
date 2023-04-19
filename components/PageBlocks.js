@@ -1,17 +1,17 @@
 import React from 'react'
 import Image from 'next/image'
-import teamPic from '../public/pic3.jpeg'
 import divas from '../public/pic1.jpeg'
 import breakAway from '../public/pic23.jpeg'
 import Link from 'next/link'
 import bball from '../public/bball.png'
+import doomSquad from '../public/doomsquad.jpeg'
 
 const PageBlocks = () => {
   return (
     <div className='h-screen grid md:grid-cols-2 grid-rows-3'>
         <div className='hidden md:block relative bg-deep-red bg-opacity-60 border border-navy-blue'>
             <Image 
-                src={teamPic}
+                src={doomSquad}
                 alt='Girls team photo op'
                 fill
                 sizes='100vh'
@@ -59,7 +59,7 @@ const PageBlocks = () => {
                     <Image 
                         src={bball}
                         alt='Basketball'
-                        className='rounded-md w-auto h-12'
+                        className='rounded-md w-auto h-12 hover:animate-bounce'
                     />
                 </div>
             </div>
@@ -86,7 +86,7 @@ const PageBlocks = () => {
                 lg:line-clamp-none
             '>
                 <p className='indent-6'>The benefits of girls participating in team sports have been well documented. Girls build confidence as they build leadership. They learn to challenge themselves to grow in adversity and learn the power of effective teams.</p>
-                <p className='sm:block indent-6 sm:space-y-2'>As girls build their basketball skills, they are helping to level the playing field at all levels of life to help them reach their full potential.</p>
+                <p className='sm:block indent-6 sm:space-y-2'>As girls build their basketball skills, they are helping to level the playing field at all levels of life to help them reach their full potential. Find out more about the Divas basketball teams...</p>
 
             </div>
             <div className='flex w-[100%] justify-around items-center
@@ -104,7 +104,7 @@ const PageBlocks = () => {
                     <Image 
                         src={bball}
                         alt='Basketball'
-                        className='rounded-md w-auto h-12'
+                        className='rounded-md w-auto h-12 hover:animate-bounce'
                     />
                 </div>
             </div>
@@ -168,7 +168,7 @@ const PageBlocks = () => {
                     <Image 
                         src={bball}
                         alt='Basketball'
-                        className='rounded-md w-auto h-12'
+                        className='rounded-md w-auto h-12 hover:animate-bounce'
                     />
                 </div>
             </div>
