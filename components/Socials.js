@@ -25,7 +25,7 @@ const Socials = () => {
             animate={{ x: 0, opacity: 1, scale: 1.1 }}
             transition={{ duration: 1.5 }}
             className='flex items-center pl-6 pr-2 w-[100%]
-            xl:pl-10
+            xl:pl-16
             '>
             <div className='sm:hidden'>
                 <Link href='/'>

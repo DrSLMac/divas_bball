@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 const About = () => {
   return (
-    <div className='relative flex flex-col h-screen  snap-start'>
+    <div className='relative flex flex-col h-screen snap-start'>
         <PageHeader pageTitle='About' />
 
         <section className='flex-grow bg-slate-400'>
