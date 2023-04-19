@@ -12,27 +12,16 @@ const Coaches = () => {
         <PageHeader pageTitle='Coaches' />
         <section className='flex-grow bg-slate-400'>
 
-          <div className='absolute animate-pulse right-10 -top-40
-              sm:right-8 sm:-rotate-[18deg] sm:-top-20
-              xl:right-10 2xl:right-12'>
-            <Image 
-                src={sheBaller}
-                alt='Divas Logo'
-                width='110'
-                className='mt-44 xs:w-[7rem] sm:w-[20rem] lg:w-64 xl:w-[20rem] 2xl:w-[24rem]'
-            />
-          </div>
-
-          <div className='grid py-8 px-10 gap-4
-            sm:px-12 sm:mr-56
-            lg:grid-cols-3 lg:grid-rows-2'>
+          <div className='grid p-8 mr-24 gap-4
+            sm:ml-100
+            lg:grid-cols-2 lg:grid-rows-3 lg:ml-80 '>
 
             <Link href='/'>
-              <div id='1' className='flex items-center justify-around p-2 bg-stone-100 border-1 border-navy-blue rounded-md shadow-4xl'>
+              <div id='1' className='coachProfile'>
                 <Image 
                   src={placeholder}
                   alt='coach headshot'
-                  width='160'
+                  width='100'
                   height='auto'
                   className='cursor-pointer'
                 />
@@ -44,11 +33,11 @@ const Coaches = () => {
             </Link>
 
               <Link href='/'>
-                <div id='2' className='flex items-center justify-around p-1 bg-stone-200 border-1 border-navy-blue rounded-md shadow-4xl'>
+                <div id='2' className='coachProfile'>
                   <Image 
                       src={placeholder}
                       alt='coach headshot'
-                      width='160'
+                      width='100'
                       height='auto'
                       className='cursor-pointer'
                   />
@@ -60,11 +49,11 @@ const Coaches = () => {
               </Link>
 
               <Link href='/'>
-                <div id='3' className='flex items-center justify-around p-1 bg-stone-100 border-1 border-navy-blue rounded-md shadow-4xl'>
+                <div id='3' className='coachProfile'>
                   <Image 
                     src={placeholder}
                     alt='coach headshot'
-                    width='160'
+                    width='100'
                     height='auto'
                     className='cursor-pointer'
                   />
@@ -76,11 +65,11 @@ const Coaches = () => {
               </Link>
 
               <Link href='/'>
-                <div id='4' className='flex items-center justify-around p-1 bg-stone-100 border-1 border-navy-blue rounded-md shadow-4xl'>
+                <div id='4' className='coachProfile'>
                   <Image 
                       src={placeholder}
                       alt='coach headshot'
-                      width='160'
+                      width='100'
                       height='auto'
                       className='cursor-pointer'
                   />
@@ -92,11 +81,11 @@ const Coaches = () => {
               </Link>
 
               <Link href='/'>
-                <div id='5' className='flex items-center justify-around p-1 bg-stone-100 border-1 border-navy-blue rounded-md shadow-4xl'>
+                <div id='5' className='coachProfile'>
                   <Image 
                       src={placeholder}
                       alt='coach headshot'
-                      width='160'
+                      width='100'
                       height='auto'
                       className='cursor-pointer'
                     />
@@ -108,11 +97,11 @@ const Coaches = () => {
               </Link>
 
               <Link href='/'>
-                <div id='6' className='flex items-center justify-around p-1 bg-stone-100 border-1 border-navy-blue rounded-md shadow-4xl'>
+                <div id='6' className='coachProfile'>
                 <Image 
                       src={placeholder}
                       alt='coach headshot'
-                      width='160'
+                      width='100'
                       height='auto'
                       className='cursor-pointer'
                     />
@@ -129,6 +118,20 @@ const Coaches = () => {
             <div id='10' className='bg-yellow-800'>coach 4 name</div>
             <div id='11' className='bg-lime-700'>coach 5 name</div>
             <div id='12' className='bg-sky-900'>coach 6 name</div> */}
+          </div>
+
+          {/* sm:right-8 sm:-rotate-[18deg] sm:-top-20 */}
+          <div className='absolute animate-pulse -top-32 right-0
+              lg:-top-32 lg:-left-20
+              xl:right-10 
+              2xl:right-12'>
+            <Image 
+                src={sheBaller}
+                alt='Divas Logo'
+                width='150'
+                className='mt-40 xs:w-[7rem] sm:w-[20rem] 
+                lg:w-[26rem] xl:w-[20rem] 2xl:w-[24rem]'
+            />
           </div>
 
           <div className='flex justify-center items-center w-[100%] pb-8 sm:py-3 xl:py-6

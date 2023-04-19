@@ -5,3 +5,7 @@
 .contactInput {
     @apply outline-none cursor-pointer bg-slate-100/80 rounded-md shadow-4xl px-6 py-3 border-b-4 border-navy-blue/40 text-deep-red placeholder-gray-500 transition-all focus:border-navy-blue/70 focus:text-deep-red hover:border-navy-blue
 }
+
+.coachProfile {
+    @apply flex items-center justify-around lg:flex-col p-2 bg-stone-400 border-2 border-navy-blue rounded-md shadow-4xl lg:p-2
+}
