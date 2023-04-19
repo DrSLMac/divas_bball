@@ -8,11 +8,11 @@ import placeholder from '../public/coach-placeholder.png'
 
 const Coaches = () => {
   return (
-    <div className='relative flex flex-col h-screen snap-start'>
+    <div className='relative flex flex-col h-screen w/screen snap-start'>
         <PageHeader pageTitle='Coaches' />
-        <section className='flex-grow bg-slate-400'>
+        <section className='flex-grow bg-slate-400 w-screen overflow-x-hidden overflow-y-scroll'>
 
-          <div className='grid p-8 mr-24 gap-4
+          <div className='grid p-8 mr-28 text-sm gap-4
             sm:ml-100
             lg:grid-cols-2 lg:grid-rows-3 lg:ml-80 '>
 
@@ -21,7 +21,7 @@ const Coaches = () => {
                 <Image 
                   src={placeholder}
                   alt='coach headshot'
-                  width='100'
+                  width='90'
                   height='auto'
                   className='cursor-pointer'
                 />
@@ -37,7 +37,7 @@ const Coaches = () => {
                   <Image 
                       src={placeholder}
                       alt='coach headshot'
-                      width='100'
+                      width='90'
                       height='auto'
                       className='cursor-pointer'
                   />
@@ -53,7 +53,7 @@ const Coaches = () => {
                   <Image 
                     src={placeholder}
                     alt='coach headshot'
-                    width='100'
+                    width='90'
                     height='auto'
                     className='cursor-pointer'
                   />
@@ -69,7 +69,7 @@ const Coaches = () => {
                   <Image 
                       src={placeholder}
                       alt='coach headshot'
-                      width='100'
+                      width='90'
                       height='auto'
                       className='cursor-pointer'
                   />
@@ -85,7 +85,7 @@ const Coaches = () => {
                   <Image 
                       src={placeholder}
                       alt='coach headshot'
-                      width='100'
+                      width='90'
                       height='auto'
                       className='cursor-pointer'
                     />
@@ -129,7 +129,7 @@ const Coaches = () => {
                 src={sheBaller}
                 alt='Divas Logo'
                 width='150'
-                className='mt-40 xs:w-[7rem] sm:w-[20rem] 
+                className='mt-40 xs:w-[9rem] sm:w-[20rem] 
                 lg:w-[26rem] xl:w-[20rem] 2xl:w-[24rem]'
             />
           </div>
