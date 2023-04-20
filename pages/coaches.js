@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import path from 'path';
 import fs from 'fs/promises'
-import CoachSnapshot from '@/components/coachSnapshot'
+import CoachSnapshot from '@/components/CoachSnapshot'
 
 const Coaches = ({coaches}) => {
 
