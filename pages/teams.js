@@ -1,11 +1,11 @@
 import React from 'react'
 import PageHeader from '@/components/PageHeader'
 import Footer from '@/components/Footer'
-import { Inspiration } from 'next/font/google'
 import Link from 'next/link'
 import { HomeIcon } from "@heroicons/react/24/solid"
 import Image from 'next/image'
 import doomSquad from '../public/doomsquad.jpeg'
+import { Inspiration } from 'next/font/google'
 
 const inspiration = Inspiration({ 
   subsets: ['latin'],

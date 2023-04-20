@@ -18,7 +18,6 @@ const Coaches = ({coaches}) => {
           id={id}
           name={name}
           title={title}
-          bio={bio}
           headshot={headshot}
         />
       )
@@ -103,7 +102,6 @@ export async function getStaticProps(context) {
     props: {
       coaches: data.coaches
     },
-revalidate: 10
   };
 }
 

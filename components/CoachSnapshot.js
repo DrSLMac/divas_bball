@@ -2,10 +2,10 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-const CoachSnapshot = ({id, name, title, bio, headshot}) => {
+const CoachSnapshot = ({id, name, title, headshot}) => {
   return (
     <div>
-        <Link href='/'>
+        <Link href={`/${id}`}>
           <div key={id} id={id} className='coachProfile'>
             <div>
                 <Image 
@@ -22,7 +22,7 @@ const CoachSnapshot = ({id, name, title, bio, headshot}) => {
                 midmd:w-[24rem]
                 lg:w-[14rem]
             '>
-              <h1 className='font-semibold pb-1'>{name}</h1>
+              <h1 className='font-medium pb-1'>{name}</h1>
               <h2>{title}</h2>
             </div>
           </div>
