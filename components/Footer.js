@@ -8,7 +8,7 @@ import SmNavBar from './SmNavBar'
 
 const Footer = () => {
   return (
-    <div className='flex justify-around items-center h-[10vh] w-screen bg-navy-blue'>
+    <div className='flex justify-around items-center h-[8vh] w-screen bg-navy-blue'>
         <Link href='#/'>
             <Image 
                 src={divaLogo}

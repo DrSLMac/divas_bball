@@ -14,7 +14,8 @@ const About = () => {
         <section className='flex-grow bg-slate-400'>
 
           <div className='absolute right-8 -top-36
-            sm:right-14 animate-pulse xl:right-10 2xl:right-12
+            sm:right-14 animate-pulse xl:right-10 
+            2xl:right-32 2xl:-top-28
           '>
 
               <Image 

@@ -16,7 +16,7 @@ const Carousel = ({images}) => {
                         alt='carousel images'
                         height={500}
                         width={300}
-                        className='rounded-xl border-2 border-navy-blue shadow-4xl h-auto'
+                        className='rounded-md border border-navy-blue shadow-4xl h-auto'
                         priority
                     />
                 ))}

@@ -55,7 +55,17 @@ const Hero = () => {
         <div className="sm:hidden">
             <h1 className={inspiration.className}>Don&apos;t Let the Name Fool You</h1>
         </div>
+        <div className="sm:pt-4">
             <Carousel images={images} />
+        </div>
+        <div className="invisible sm:visible sm:text-navy-blue">
+            <div className="py-4 text-4xl">
+                <h2 >All Greatness Comes at a Cost</h2>
+            </div>
+            <div className="py-4 text-8xl">
+                <h2 className={inspiration.className}>What are you willing to pay?</h2>
+            </div>
+        </div>
         </section>
     )
 }
