@@ -4,6 +4,8 @@ import Footer from '@/components/Footer'
 import { Inspiration } from 'next/font/google'
 import Link from 'next/link'
 import { HomeIcon } from "@heroicons/react/24/solid"
+import Image from 'next/image'
+import doomSquad from '../public/doomsquad.jpeg'
 
 const inspiration = Inspiration({ 
   subsets: ['latin'],
@@ -13,7 +15,7 @@ const inspiration = Inspiration({
 const Teams = () => {
   return (
     <div className='relative flex flex-col h-screen'>
-        <section className='flex flex-col items-center h-44 text-white w-screen
+        <section className='flex flex-col sticky top-0 items-center h-44 text-white w-screen
           bg-gradient-to-b from-navy-blue from-20% via-deep-red via-40% to-slate-400
           py-8
           xl:h-56 
@@ -37,14 +39,21 @@ const Teams = () => {
           </div>
         </section>
 
-        <section className='h-full bg-bball-hoop bg-center bg-no-repeat bg-cover'>
+        <section className='h-full bg-bball-hoop bg-fixed bg-center bg-no-repeat bg-cover overflow-y-scroll'>
 
-          <div className='grid gap-4 py-16 px-12 text-center
-            md:grid-cols-3 md:grid-rows-2 
+          <div className='grid gap-4 py-16 px-12
+            md:grid-cols-3 md:grid-rows-2 cursor-pointer
           '>
             <div id='1' className='bg-slate-300 h-[30vh] '>
-            Team 1
-            
+              <Image 
+                src={doomSquad}
+                className='center'
+              />
+              {/* <div className='flex flex-col h-full'> */}
+                <div className='flex font-semibold text-xl hover:bg-gradient-to-t from-deep-red via-20% to-slate-300/40 to-60% '>
+                  <h2>2025 Divas DoomSquad</h2>
+                </div>
+              {/* </div> */}
             </div>
             
             <div id='2' className='bg-slate-300 h-[30vh]'>Team 2
@@ -52,6 +61,17 @@ const Teams = () => {
             </div>
             
             <div id='3' className='bg-slate-300 h-[30vh]'>Team 3
+
+            <div className='media-cover-wrapper'>
+              <div className='entry-media-wrapper'>
+                <div className='entry-media'>
+                  <Image src={doomSquad}/>
+                  <div className='media-poster'>
+
+                  </div>
+                </div>
+              </div>
+            </div>
             
             </div>
             
@@ -70,7 +90,7 @@ const Teams = () => {
 
         </section>
 
-        <section className='sticky bottom-0'>
+        <section className='fixed bottom-0'>
             <Footer />
         </section>
     </div>
