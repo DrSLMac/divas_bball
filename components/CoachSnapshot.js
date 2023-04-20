@@ -13,12 +13,12 @@ const CoachSnapshot = ({id, name, title, bio, headshot}) => {
                 alt='coach headshot'
                 width='80'
                 height='80'
-                className='coachPic'
+                className='coachPic lg:pt-1'
                 />
             </div>
 
             <div className='text-center w-[13rem] 
-                xs:w-[14rem] sm:w-[16rem] md:w-[18rem]
+                xs:w-[14rem] minism:w-[17rem] sm:w-[18rem] md:w-[20rem]
                 midmd:w-[24rem]
                 lg:w-[14rem]
             '>

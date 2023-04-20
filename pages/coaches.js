@@ -49,7 +49,7 @@ const Coaches = ({coaches}) => {
                 midmd:right-4
                 lg:-top-32 lg:right-6
                 xl:right-10 
-                2xl:right-12'>
+                2xl:right-20'>
               <Image 
                   src={sheBaller}
                   alt='Divas Logo'
@@ -61,7 +61,7 @@ const Coaches = ({coaches}) => {
                   md:w-[18rem]
                   lg:w-[23rem] 
                   xl:w-[24rem] 
-                  2xl:w-[26rem]'
+                  2xl:w-[28rem]'
               />
             </div>
 
