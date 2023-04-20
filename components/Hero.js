@@ -59,10 +59,10 @@ const Hero = () => {
             <Carousel images={images} />
         </div>
         <div className="invisible sm:visible sm:text-navy-blue">
-            <div className="py-4 text-4xl">
+            <div className="py-4 text-3xl md:text-4xl">
                 <h2 >All Greatness Comes at a Cost</h2>
             </div>
-            <div className="py-4 text-8xl">
+            <div className="py-4 text-7xl md:text-8xl">
                 <h2 className={inspiration.className}>What are you willing to pay?</h2>
             </div>
         </div>

@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
-import divaLogo from '../public/divas.png'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { Accordion, AccordionDetails, AccordionSummary, Grid, ListItem } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
@@ -16,17 +14,7 @@ const MobileNavBar = () => {
 
   return (
     <>
-        {/* Mobile navbar and hamburger menu */}
         <div className='flex h-full w-full pr-4 justify-end items-center sm:hidden'>
-            {/* <Link href='/'>
-                <Image 
-                    src={divaLogo}
-                    alt='Divas Logo'
-                    width='150'
-                    className='cursor-pointer'
-                    priority
-                />
-            </Link> */}
             <div onClick={handleNav} className='cursor-pointer'>
                 <AiOutlineMenu size={35} color='white'/>
             </div>
