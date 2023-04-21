@@ -1,0 +1,7 @@
+{
+    "teams": [
+        { "id": "team1",
+        "teamName": "Divas DoomSquad 2025" },
+        { "id": "team2", "teamName": "Divas DoomSquad 2027" }
+    ]
+}

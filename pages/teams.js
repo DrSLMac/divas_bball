@@ -1,5 +1,4 @@
 import React from 'react'
-import PageHeader from '@/components/PageHeader'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
 import { HomeIcon } from "@heroicons/react/24/solid"
@@ -13,8 +12,10 @@ const inspiration = Inspiration({
 })
 
 const Teams = () => {
+
   return (
-    <div className='relative flex flex-col h-screen'>
+    <div className='relative flex flex-col h-screen snap-start'>
+
         <section className='flex flex-col sticky top-0 items-center h-44 text-white w-screen
           bg-gradient-to-b from-navy-blue from-20% via-deep-red via-40% to-slate-400
           py-8
@@ -39,35 +40,46 @@ const Teams = () => {
           </div>
         </section>
 
-        <section className='h-full bg-bball-hoop bg-fixed bg-center bg-no-repeat bg-cover overflow-y-scroll'>
+        <section className='bg-slate-400'>
 
-          <div className='grid gap-4 py-16 px-12
+          <div className='grid gap-4 py-2 px-12
             md:grid-cols-3 md:grid-rows-2 cursor-pointer
           '>
-            <div id='1' className='bg-slate-300 h-[30vh] '>
-              <Image 
-                src={doomSquad}
-                className='center'
-              />
-              {/* <div className='flex flex-col h-full'> */}
-                <div className='flex font-semibold text-xl hover:bg-gradient-to-t from-deep-red via-20% to-slate-300/40 to-60% '>
-                  <h2>2025 Divas DoomSquad</h2>
+            <div id='1' className='bg-slate-300 h-[30vh]'>
+              <div className='media-cover-wrapper'>
+                <div className='entry-media-wrapper'>
+                  <div className='entry-media'>
+                    <Image 
+                      src={doomSquad}
+                      alt='team celebration'
+                    />
+                    <div className='flex items-end text-navy-blue h-8 px-1 media-poster font-semibold 
+                    hover:bg-gradient-to-t
+                    text-2xl'>
+                      <h2>2025 Divas DoomSquad</h2>
+                    </div>
+                  </div>
                 </div>
-              {/* </div> */}
+              </div>
             </div>
             
             <div id='2' className='bg-slate-300 h-[30vh]'>Team 2
             
             </div>
             
-            <div id='3' className='bg-slate-300 h-[30vh]'>Team 3
+            <div id='3' className='bg-slate-300 h-[30vh]'>
 
             <div className='media-cover-wrapper'>
               <div className='entry-media-wrapper'>
                 <div className='entry-media'>
-                  <Image src={doomSquad}/>
-                  <div className='media-poster'>
-
+                  <Image 
+                    src={doomSquad}
+                    alt='team celebration'
+                  />
+                  <div className='flex items-end text-navy-blue h-8 px-1 media-poster font-semibold 
+                  hover:bg-gradient-to-t
+                  text-2xl'>
+                    <h2>2025 Divas DoomSquad</h2>
                   </div>
                 </div>
               </div>

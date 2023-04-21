@@ -11,7 +11,7 @@ import CoachSnapshot from '@/components/CoachSnapshot'
 const Coaches = ({coaches}) => {
 
   const coachSnapShots = coaches.map(coach => {
-      const { id, name, title, bio, headshot } = coach
+      const { id, name, title, headshot } = coach
       return (
         <CoachSnapshot
           key={id}
@@ -22,7 +22,6 @@ const Coaches = ({coaches}) => {
         />
       )
     })
-  
 
   return (
     <div className='relative flex flex-col h-screen w/screen snap-start'>

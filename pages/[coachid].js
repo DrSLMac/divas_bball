@@ -1,7 +1,6 @@
 import React from 'react'
 import path from 'path';
 import fs from 'fs/promises'
-import PageHeader from '@/components/PageHeader';
 import Image from 'next/image';
 import { HomeIcon } from "@heroicons/react/24/solid"
 import { Inspiration } from 'next/font/google'
