@@ -59,23 +59,26 @@ const CoachDetailsPage = (props) => {
         </section>
 
 
-      <section className='flex-grow bg-slate-400 w-screen'>
-        <div className='flex items-center px-4'>
+      <section className='flex-grow bg-slate-400 w-screen md:px-8 midmd:px-20 lg:px-28 xl:px-36 2xl:px-52'>
+        <div className='flex items-center justify-around px-8 2xl:px-20'>
             <div>
                 <Image 
                     src={coachDetails.headshot}
-                    width={250}
-                    height={250}
+                    width={220}
+                    height={220}
                     alt='coach head shot'
-                    className='pt-4'
+                    className='pt-4 md:w-[16rem] lg:w-[20rem]'
                 />
             </div>
-            <div className='flex flex-col text-center'>
-                <h1 className='text-2xl font-medium'>{coachDetails.name}</h1>
-                <h2>{coachDetails.title}</h2>
+            <div className='flex flex-col text-center xl:space-y-7 2xl:space-y-8'>
+                <h1 className='font-medium text-2xl sm:text-4xl md:text-5xl lg:text-6xl'>{coachDetails.name}</h1>
+                <h2 className='sm:text-xl md:text-2xl lg:text-3xl'>{coachDetails.title}</h2>
             </div>
         </div>
-        <p className='p-7 indent-8'>{coachDetails.bio}</p>
+        <div className='px-16 sm:text-lg lg:text-xl lg:leading-7 xl:leading-8'>
+            <p className='indent-8 pt-6'>{coachDetails.bio1}</p>
+            <p className='indent-8 pt-4'>{coachDetails.bio2}</p>
+        </div>
       </section>
     </div>
   )
