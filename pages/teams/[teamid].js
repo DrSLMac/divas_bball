@@ -55,6 +55,7 @@ const TeamDetailsPage = () => {
         </div>
         </section>
 
+
         <section className='flex-grow bg-slate-400 w-screen md:px-8 midmd:px-20 lg:px-28 xl:px-36 2xl:px-52'>
 
         </section>
