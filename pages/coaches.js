@@ -104,5 +104,4 @@ export async function getStaticProps(context) {
   };
 }
 
-
 export default Coaches

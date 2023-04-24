@@ -20,7 +20,7 @@ const TeamDetailsPage = () => {
           xl:h-56 
         '>
           <div className={inspiration.className}>
-              <h1 className='text-7xl xl:text-8xl'>Meet the Coach</h1>
+              <h1 className='text-7xl xl:text-8xl'>Meet the Team</h1>
           </div>
 
         <div className='flex items-center'>
@@ -30,7 +30,7 @@ const TeamDetailsPage = () => {
               className='pageButtons
               h-[2rem] px-3 mx-3 text-xs
             '>
-              <Link href='/coaches'>
+              <Link href='/teams'>
                 <div className='flex items-center'>
                   {/* <HomeIcon className="text-white pr-3 h-4 md:h-7 md:w-7"/> */}
                   Back to Previous Page
@@ -62,5 +62,38 @@ const TeamDetailsPage = () => {
     </div>
   )
 }
+
+export async function getStaticProps(context) {
+  const { params } = context;
+
+  const teamId = params.teamid;
+
+  const filePath = path.join(process.cwd(), 'data', 'team_data.json');
+  const jsonData = await fs.readFile(filePath)
+  const data = JSON.parse(jsonData);
+
+  const teamInfo = data.teams.find(team => team.id === teamId);
+
+  return {
+    props: {
+      teamDetails: teamInfo
+    }
+  }
+}
+
+export async function getStaticPaths() {
+  return {
+    paths: [
+      { params: { teamid: 'team1' } },
+      { params: { teamid: 'team2' } },
+      { params: { teamid: 'team3' } },
+      { params: { teamid: 'team4' } },
+      { params: { teamid: 'team5' } },
+      { params: { teamid: 'team6' } },
+    ],
+    fallback: false
+  }
+}
+
 
 export default TeamDetailsPage

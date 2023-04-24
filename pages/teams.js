@@ -2,8 +2,6 @@ import React from 'react'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
 import { HomeIcon } from "@heroicons/react/24/solid"
-import Image from 'next/image'
-import doomSquad from '../public/doomsquad.jpeg'
 import { Inspiration } from 'next/font/google'
 import path from 'path';
 import fs from 'fs/promises'
@@ -55,79 +53,11 @@ const Teams = ({teams}) => {
         </section>
 
         <section className='bg-slate-400'>
-
           <div className='grid gap-4 py-2 px-12
             md:grid-cols-3 md:grid-rows-2 cursor-pointer
           '>
             {eachTeam}
-            {/* <div id='1' className='bg-slate-300 h-[30vh]'>
-              <div className='media-cover-wrapper'>
-                <div className='entry-media-wrapper'>
-                  <div className='entry-media'>
-                    <Image 
-                      src={doomSquad}
-                      alt='team celebration'
-                    />
-                    <div className='flex items-end text-navy-blue h-8 px-1 media-poster font-semibold 
-                    hover:bg-gradient-to-t from-deep-red
-                    text-2xl'>
-                      <h2>2025 Divas DoomSquad</h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div id='2' className='bg-slate-300 h-[30vh]'>
-              <div className='media-cover-wrapper'>
-                <div className='entry-media-wrapper'>
-                  <div className='entry-media'>
-                    <Image 
-                      src={doomSquad}
-                      alt='team celebration'
-                    />
-                    <div className='flex items-end text-navy-blue h-8 px-1 media-poster font-semibold 
-                    hover:bg-gradient-to-t from-deep-red
-                    text-2xl'>
-                      <h2>2025 Divas DoomSquad</h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            
-            </div>
-            
-            <div id='3' className='bg-slate-300 h-[30vh]'>
-              <div className='media-cover-wrapper'>
-                <div className='entry-media-wrapper'>
-                  <div className='entry-media'>
-                    <Image 
-                      src={doomSquad}
-                      alt='team celebration'
-                    />
-                    <div className='flex items-end text-navy-blue h-8 px-1 media-poster font-semibold 
-                    hover:bg-gradient-to-t from-deep-red
-                    text-2xl'>
-                      <h2>2025 Divas DoomSquad</h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div id='4' className='bg-slate-300 h-[30vh]'>Team 4
-            
-            </div>
-            
-            <div id='5' className='bg-slate-300 h-[30vh]'>Team 5
-            
-            </div>
-            
-            <div id='6' className='bg-slate-300 h-[30vh]'>Team 6
-            
-            </div> */}
           </div>
-
         </section>
 
         <section className='fixed bottom-0'>
