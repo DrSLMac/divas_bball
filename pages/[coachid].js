@@ -60,13 +60,13 @@ const CoachDetailsPage = (props) => {
 
       <section className='flex-grow bg-slate-400 w-screen md:px-8 midmd:px-20 lg:px-28 xl:px-36 2xl:px-52'>
         <div className='flex items-center justify-around px-8 2xl:px-20'>
-            <div>
+            <div className='rounded-md'>
                 <Image 
                     src={coachDetails.headshot}
                     width={220}
                     height={220}
                     alt='coach head shot'
-                    className='pt-4 md:w-[16rem] lg:w-[20rem]'
+                    className='pt-4 md:w-[16rem] lg:w-[20rem] rounded-md'
                 />
             </div>
             <div className='flex flex-col text-center xl:space-y-7 2xl:space-y-8'>

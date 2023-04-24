@@ -5,13 +5,27 @@ import { HomeIcon } from "@heroicons/react/24/solid"
 import Image from 'next/image'
 import doomSquad from '../public/doomsquad.jpeg'
 import { Inspiration } from 'next/font/google'
+import path from 'path';
+import fs from 'fs/promises'
+import TeamSnapshot from '@/components/TeamSnapshot'
 
 const inspiration = Inspiration({ 
   subsets: ['latin'],
   weight: ['400'],
 })
 
-const Teams = () => {
+const Teams = ({teams}) => {
+  const eachTeam = teams.map(team => {
+    const { id, teamName, teamPhoto} = team
+    return (
+      <TeamSnapshot 
+        key={id}
+        id={id}
+        teamName={teamName}
+        teamPhoto={teamPhoto}
+      />
+    )
+  })
 
   return (
     <div className='relative flex flex-col h-screen snap-start'>
@@ -45,7 +59,8 @@ const Teams = () => {
           <div className='grid gap-4 py-2 px-12
             md:grid-cols-3 md:grid-rows-2 cursor-pointer
           '>
-            <div id='1' className='bg-slate-300 h-[30vh]'>
+            {eachTeam}
+            {/* <div id='1' className='bg-slate-300 h-[30vh]'>
               <div className='media-cover-wrapper'>
                 <div className='entry-media-wrapper'>
                   <div className='entry-media'>
@@ -54,7 +69,7 @@ const Teams = () => {
                       alt='team celebration'
                     />
                     <div className='flex items-end text-navy-blue h-8 px-1 media-poster font-semibold 
-                    hover:bg-gradient-to-t
+                    hover:bg-gradient-to-t from-deep-red
                     text-2xl'>
                       <h2>2025 Divas DoomSquad</h2>
                     </div>
@@ -63,28 +78,41 @@ const Teams = () => {
               </div>
             </div>
             
-            <div id='2' className='bg-slate-300 h-[30vh]'>Team 2
+            <div id='2' className='bg-slate-300 h-[30vh]'>
+              <div className='media-cover-wrapper'>
+                <div className='entry-media-wrapper'>
+                  <div className='entry-media'>
+                    <Image 
+                      src={doomSquad}
+                      alt='team celebration'
+                    />
+                    <div className='flex items-end text-navy-blue h-8 px-1 media-poster font-semibold 
+                    hover:bg-gradient-to-t from-deep-red
+                    text-2xl'>
+                      <h2>2025 Divas DoomSquad</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
             
             </div>
             
             <div id='3' className='bg-slate-300 h-[30vh]'>
-
-            <div className='media-cover-wrapper'>
-              <div className='entry-media-wrapper'>
-                <div className='entry-media'>
-                  <Image 
-                    src={doomSquad}
-                    alt='team celebration'
-                  />
-                  <div className='flex items-end text-navy-blue h-8 px-1 media-poster font-semibold 
-                  hover:bg-gradient-to-t
-                  text-2xl'>
-                    <h2>2025 Divas DoomSquad</h2>
+              <div className='media-cover-wrapper'>
+                <div className='entry-media-wrapper'>
+                  <div className='entry-media'>
+                    <Image 
+                      src={doomSquad}
+                      alt='team celebration'
+                    />
+                    <div className='flex items-end text-navy-blue h-8 px-1 media-poster font-semibold 
+                    hover:bg-gradient-to-t from-deep-red
+                    text-2xl'>
+                      <h2>2025 Divas DoomSquad</h2>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            
             </div>
             
             <div id='4' className='bg-slate-300 h-[30vh]'>Team 4
@@ -97,7 +125,7 @@ const Teams = () => {
             
             <div id='6' className='bg-slate-300 h-[30vh]'>Team 6
             
-            </div>
+            </div> */}
           </div>
 
         </section>
@@ -107,6 +135,18 @@ const Teams = () => {
         </section>
     </div>
   )
+}
+
+export async function getStaticProps(context) {
+  const filePath = path.join(process.cwd(), 'data', 'team_data.json');
+  const jsonData = await fs.readFile(filePath);
+  const data = JSON.parse(jsonData)
+
+  return {
+    props: {
+      teams: data.teams
+    },
+  };
 }
 
 export default Teams
