@@ -26,5 +26,5 @@
 }
 
 .teamSnapshot {
-    @apply flex bg-slate-300 h-[20vh]
+    @apply flex bg-slate-300 rounded-md shadow-4xl cursor-pointer 
 }

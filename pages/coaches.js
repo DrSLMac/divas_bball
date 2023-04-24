@@ -24,8 +24,9 @@ const Coaches = ({coaches}) => {
     })
 
   return (
-    <div className='relative flex flex-col h-screen w/screen snap-start'>
+    <div className='relative flex flex-col h-screen w-screen snap-start'>
       <PageHeader pageTitle='Coaches' />
+      
       <section className='flex-grow bg-slate-400 w-screen'>
         <div className='lg:flex lg:justify-around'>
 

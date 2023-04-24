@@ -26,9 +26,9 @@ const Teams = ({teams}) => {
   })
 
   return (
-    <div className='relative flex flex-col h-screen snap-start'>
+    <div className='relative flex flex-col h-screen w-screen snap-start'>
 
-        <section className='flex flex-col sticky top-0 items-center h-44 text-white w-screen
+        <section className='flex flex-col sticky top-0 items-center h-44 text-white w-screen z-90
           bg-gradient-to-b from-navy-blue from-20% via-deep-red via-40% to-slate-400
           py-8
           xl:h-56 
@@ -52,9 +52,9 @@ const Teams = ({teams}) => {
           </div>
         </section>
 
-        <section className='bg-slate-400'>
+        <section className='flex-grow bg-slate-400 w-screen pb-72 '>
           <div className='grid gap-4 py-2 px-12
-            md:grid-cols-3 md:grid-rows-2 cursor-pointer
+            md:grid-cols-3 md:grid-rows-2 
           '>
             {eachTeam}
           </div>
