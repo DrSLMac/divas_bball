@@ -5,7 +5,7 @@ import Image from 'next/image'
 const TeamSnapshot = ({id, teamName, teamPhoto}) => {
   return (
     <div>
-    <Link href={`/${id}`}>
+    <Link href={`/teams/${id}`}>
 
     <div id={id} className='bg-slate-300 h-[30vh]'>
       <div className='media-cover-wrapper'>

@@ -5,7 +5,7 @@ import Image from 'next/image'
 const CoachSnapshot = ({id, name, title, headshot}) => {
   return (
     <div>
-        <Link href={`/${id}`}>
+        <Link href={`/coaches/${id}`}>
           <div key={id} id={id} className='coachProfile'>
             <div>
                 <Image 
