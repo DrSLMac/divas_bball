@@ -1,11 +1,11 @@
 {
     "teams": [
         { "id": "team1",
-        "teamName": "Divas DoomSquad 2024", "teamPhoto": "/team_placeholder.jpeg" },
+        "teamName": "Divas DoomSquad 2024", "teamPhoto": "/doomsquad2025.jpeg" },
         { "id": "team2", "teamName": "Divas DoomSquad 2025", "teamPhoto": "/team_placeholder.jpeg" },
-        { "id": "team3", "teamName": "Divas DoomSquad 2026", "teamPhoto": "/team_placeholder.jpeg"},
-        { "id": "team4", "teamName": "Divas DoomSquad 2027", "teamPhoto": "/team_placeholder.jpeg"},
-        { "id": "team5", "teamName": "Divas DoomSquad 2028", "teamPhoto": "/team_placeholder.jpeg"},
+        { "id": "team3", "teamName": "Divas DoomSquad 2026", "teamPhoto": "/team-placeholder2.jpeg"},
+        { "id": "team4", "teamName": "Divas DoomSquad 2027", "teamPhoto": "/doomsquad.jpeg"},
+        { "id": "team5", "teamName": "Divas DoomSquad 2028", "teamPhoto": "/team-placeholder.jpeg"},
         { "id": "team6", "teamName": "Divas DoomSquad 2029", "teamPhoto": "/team_placeholder.jpeg"}
 
     ]
