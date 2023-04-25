@@ -26,5 +26,5 @@
 }
 
 .teamSnapshot {
-    @apply flex bg-slate-300 rounded-md shadow-4xl cursor-pointer 
+    @apply flex bg-slate-300 rounded-md shadow-4xl cursor-pointer h-[24vh] hover:bg-gradient-to-t from-deep-red hover:text-white
 }

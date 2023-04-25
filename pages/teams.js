@@ -54,7 +54,9 @@ const Teams = ({teams}) => {
 
         <section className='flex-grow bg-slate-400 w-screen pb-72 '>
           <div className='grid gap-4 py-2 px-12
-            md:grid-cols-3 md:grid-rows-2 
+          sm:grid-cols-2
+          midmd:gap-7
+            lg:grid-cols-3 md:grid-rows-2 
           '>
             {eachTeam}
           </div>
