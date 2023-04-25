@@ -1,17 +1,32 @@
 import React from 'react'
 import path from 'path';
 import fs from 'fs/promises'
-import Image from 'next/image';
 import { HomeIcon } from "@heroicons/react/24/solid"
 import { Inspiration } from 'next/font/google'
 import Link from 'next/link';
+import { Box } from "@mui/material"
+import { DataGrid, GridToolbar } from '@mui/x-data-grid';
+import { rosterData } from '@/data/rosterData';
+
 
 const inspiration = Inspiration({ 
   subsets: ['latin'],
   weight: ['400'],
 })
 
-const TeamDetailsPage = () => {
+const TeamDetailsPage = (props) => {
+  const { teamDetails } = props
+
+  const columns = [
+    { field: "id", headerName: "Jersey No.", },
+    { field: "headshot", headerName: "Player Pic", type: "" },
+    { field: "name", headerName: "Name", flex: 1, cellClassName: "name-column--cell" },
+    { field: "position", headerName: "Position" },
+    { field: "graduationYear", headerName: "Graduation Year", type: "number", headerAlign: "left", align: "left"},
+
+  ]
+
+
   return (
     <div className='relative flex flex-col h-screen w/screen snap-start'>
         <section className='flex flex-col sticky top-0 items-center h-44 text-white w-screen
@@ -57,6 +72,47 @@ const TeamDetailsPage = () => {
 
 
         <section className='flex-grow bg-slate-400 w-screen md:px-8 midmd:px-20 lg:px-28 xl:px-36 2xl:px-52'>
+        <Box m="20px">
+          <Box
+            m="40px 0 0 0" 
+                height="75vh" 
+                sx={{
+                    "& .MuiDataGrid-root": {
+                        border: "none"
+                    },
+                    "& .MuiDataGrid-cell": {
+                        borderBottom: "none"
+                    },
+                    "& .name-column--cell": {
+                        color: "navy-blue"
+                    },
+                    "& .MuiDataGrid-columnHeaders": {
+                        backgroundColor: "slate-300",
+                        borderBottom: "none"
+                    },
+                    "& .MuiDataGrid-virtualScroller": {
+                        backgroundColor: "slate-500"
+                    },
+                    "& .MuiDataGrid-footerContainer": {
+                        borderTop: "none",
+                        backgroundColor: "navy-blue"
+                    },
+                    "& .MuiCheckbox-root": {
+                        color: `deep-red !important`,
+                    },
+                    "& .MuiDataGrid-toolbarContainer .MuiButton-text": {
+                        color: `white !important`,
+                    },
+                }}
+          >
+            <DataGrid 
+              rows={rosterData}
+              columns={columns}
+              components={{ Toolbar: GridToolbar }}
+            />
+          </Box>
+          
+        </Box>
 
         </section>
 

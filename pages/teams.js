@@ -56,7 +56,8 @@ const Teams = ({teams}) => {
           <div className='grid gap-4 py-2 px-12
           sm:grid-cols-2
           midmd:gap-7
-            lg:grid-cols-3 md:grid-rows-2 
+            lg:grid-cols-3 md:grid-rows-2
+            2xl:gap-10
           '>
             {eachTeam}
           </div>

@@ -15,7 +15,7 @@ const TeamSnapshot = ({id, teamName, teamPhoto}) => {
               <div className='p-1 
                 text-xl mt-[20vh]
                 xxs:mt-[20.7vh]
-                
+                2xl:mt-[27vh]
               '>
                 <h2>{teamName}</h2>
               </div>
