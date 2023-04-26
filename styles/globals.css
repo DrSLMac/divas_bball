@@ -16,7 +16,7 @@
 }
 
 .coachPic {
-    @apply cursor-pointer lg:w-40
+    @apply cursor-pointer lg:w-40 h-auto
 }
 
 .pageButtons {

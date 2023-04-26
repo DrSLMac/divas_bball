@@ -66,7 +66,7 @@ const CoachDetailsPage = (props) => {
                     width={220}
                     height={220}
                     alt='coach head shot'
-                    className='pt-4 md:w-[16rem] lg:w-[20rem] rounded-md'
+                    className='pt-4 h-auto md:w-[16rem] lg:w-[20rem] rounded-md'
                 />
             </div>
             <div className='flex flex-col text-center xl:space-y-7 2xl:space-y-8'>
