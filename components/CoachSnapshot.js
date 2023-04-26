@@ -13,7 +13,7 @@ const CoachSnapshot = ({id, name, title, headshot}) => {
                 alt='coach headshot'
                 width='80'
                 height='80'
-                className='coachPic lg:pt-1'
+                className='coachPic lg:pt-1 h-auto'
                 />
             </div>
 
