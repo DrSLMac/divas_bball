@@ -20,7 +20,6 @@ export default function Home() {
       <header id='/' className='snap-start'>
         <Socials />
         <Banner />
-        {/* <NavBar /> */}
       </header>
 
       <main>

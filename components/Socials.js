@@ -11,7 +11,7 @@ import divaLogo from '../public/divas.png'
 // 2xl:px-1
 const Socials = () => {
   return (
-    <section className='sticky flex items-center z-20 top-0
+    <section className='sticky flex items-center top-0
         w-screen bg-gradient-to-r from-navy-blue from-20% to-deep-red
         h-16
     '>
